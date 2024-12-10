@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Julkaisut xmlns="urn:mace:funet.fi:julkaisut/2015/03/01" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mace:funet.fi:julkaisut/2015/03/01">
+
+<!-- /// A1 julkaisutyyppiä vastaavan julkaisun esimerkki -->
+
+<Julkaisu>
+	<OrganisaatioTunnus>99999</OrganisaatioTunnus>
+	<JulkaisunTilaKoodi>2</JulkaisunTilaKoodi>
+	<JulkaisunOrgTunnus>0b8178b1-85ab-4c5c-95a8-66c308ff3548</JulkaisunOrgTunnus>
+	<JulkaisunOrgYksikot>
+		<YksikkoKoodi>H50</YksikkoKoodi>
+	</JulkaisunOrgYksikot>
+	<JulkaisuVuosi>2019</JulkaisuVuosi>
+	<JulkaisunNimi>Sunburn-using excess energy of small-scale production for distributed computing</JulkaisunNimi>
+	<TekijatiedotTeksti>Nurminen, J. K.; Niemi, T.; Strandman, J.; Ruokosuo, K.</TekijatiedotTeksti>
+	<TekijoidenLkm>4</TekijoidenLkm>
+	<SivunumeroTeksti>97-119</SivunumeroTeksti>
+	<Avainsanat>
+		<AvainsanaTeksti>Distributed computing</AvainsanaTeksti>
+		<AvainsanaTeksti>Solar energy</AvainsanaTeksti>
+		<AvainsanaTeksti>Green computing</AvainsanaTeksti>
+		<AvainsanaTeksti>Energy storage</AvainsanaTeksti>
+		<AvainsanaTeksti>Scientific computing</AvainsanaTeksti>
+		<AvainsanaTeksti>Distributed data center</AvainsanaTeksti>
+		<AvainsanaTeksti>DATA CENTERS</AvainsanaTeksti>
+		<AvainsanaTeksti>SYSTEMS</AvainsanaTeksti>
+		<AvainsanaTeksti>POWER</AvainsanaTeksti>
+		<AvainsanaTeksti>MIDDLEWARE</AvainsanaTeksti>
+		<AvainsanaTeksti>STORAGE</AvainsanaTeksti>
+		<AvainsanaTeksti>COST</AvainsanaTeksti>
+		<AvainsanaTeksti>TECHNOLOGIES</AvainsanaTeksti>
+		<AvainsanaTeksti>MANAGEMENT</AvainsanaTeksti>
+		<AvainsanaTeksti>EVOLUTION</AvainsanaTeksti>
+		<AvainsanaTeksti>BATTERY</AvainsanaTeksti>
+	</Avainsanat>
+	<Tiivistelma>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Tiivistelma>
+	<JufoTunnus>75819</JufoTunnus>
+	<JulkaisumaaKoodi>528</JulkaisumaaKoodi>
+	<LehdenNimi>Energy Efficiency</LehdenNimi>
+	<ISSN>1570-646X</ISSN>
+	<ISSN>1570-6478</ISSN>
+	<VolyymiTeksti>11</VolyymiTeksti>
+	<LehdenNumeroTeksti>1</LehdenNumeroTeksti>
+	<EmojulkaisunNimi>Energy Efficiency</EmojulkaisunNimi>
+	<MuotoKoodi>0</MuotoKoodi>
+	<YleisoKoodi>0</YleisoKoodi>
+	<EmojulkaisuntyyppiKoodi>0</EmojulkaisuntyyppiKoodi>
+	<ArtikkelityyppiKoodi>1</ArtikkelityyppiKoodi>
+	<VertaisarvioituKytkin>1</VertaisarvioituKytkin>
+	<TieteenalaKoodit>
+		<TieteenalaKoodi JNro="1">114</TieteenalaKoodi>
+	</TieteenalaKoodit>
+	<YhteisjulkaisuKVKytkin>1</YhteisjulkaisuKVKytkin>
+	<JulkaisunKansainvalisyysKytkin>1</JulkaisunKansainvalisyysKytkin>
+	<JulkaisunKieliKoodi>en</JulkaisunKieliKoodi>
+	<AvoinSaatavuusKoodi>1</AvoinSaatavuusKoodi>
+	<AvoinSaatavuusKytkin>1</AvoinSaatavuusKytkin>
+	<JulkaisuKanavaOA>1</JulkaisuKanavaOA>
+	<AvoinSaatavuusJulkaisumaksu>1113.63</AvoinSaatavuusJulkaisumaksu>
+	<AvoinSaatavuusJulkaisumaksuVuosi>2022</AvoinSaatavuusJulkaisumaksuVuosi>
+	<YhteisjulkaisuYritysKytkin>0</YhteisjulkaisuYritysKytkin>
+	<RinnakkaistallennettuKytkin>1</RinnakkaistallennettuKytkin>
+		<Rinnakkaistallennettu>
+			<RinnakkaistallennusOsoiteTeksti>http://urn.fi/urn:nbn:fi-fe2022040126638</RinnakkaistallennusOsoiteTeksti>
+			<RinnakkaistallennusVersioKoodi>0</RinnakkaistallennusVersioKoodi>
+			<RinnakkaistallennusLisenssiKoodi>0</RinnakkaistallennusLisenssiKoodi>
+			<RinnakkaistallennusEmbargoPvm>2022-08-25</RinnakkaistallennusEmbargoPvm>
+		</Rinnakkaistallennettu>
+	<DOI>10.1007/s12053-017-9552-1</DOI>
+	<PysyvaOsoiteTeksti>http://dx.doi.org/10.1007/s12053-017-9552-1</PysyvaOsoiteTeksti>
+	<LahdetietokannanTunnus>WOS:000419000000007; Scopus:85027522843</LahdetietokannanTunnus>
+	<Tekijat>
+		<Tekija>
+			<Sukunimi>Niemi</Sukunimi>
+			<Etunimet>T.</Etunimet>
+			<Yksikot>
+				<YksikkoKoodi>JCM800</YksikkoKoodi>
+			</Yksikot>
+			<ORCID>0000-0000-0000-0000</ORCID>
+		</Tekija>
+		<Tekija>
+			<Sukunimi>Nurminen</Sukunimi>
+			<Etunimet>J. K.</Etunimet>
+			<Yksikot>
+				<YksikkoKoodi>JCM900</YksikkoKoodi>
+			</Yksikot>
+			<ORCID>0000-0000-0000-0000</ORCID>
+		</Tekija>
+	</Tekijat>
+	</Julkaisu>
+
+<!-- ///F2 julkaisua vastaava esimerkki -->
+
+<Julkaisu>
+	<OrganisaatioTunnus>99999</OrganisaatioTunnus>
+	<JulkaisunTilaKoodi>2</JulkaisunTilaKoodi>
+	<JulkaisunOrgTunnus>0e75d85a-7aad-48f2-9bd5-de9cf2a6cb1c</JulkaisunOrgTunnus>
+	<JulkaisunOrgYksikot>
+		<YksikkoKoodi>A806</YksikkoKoodi>
+	</JulkaisunOrgYksikot>
+	<JulkaisuVuosi>2023</JulkaisuVuosi>
+	<JulkaisunNimi>Turun Taiteilijaseuran 99. vuosinäyttely</JulkaisunNimi>
+	<TekijatiedotTeksti>Ilveskorpi, Sara</TekijatiedotTeksti>
+	<KonferenssinNimi>Turun Taiteilijaseuran vuosinäyttely</KonferenssinNimi>
+	<KustantajanNimi>Turun Taiteilijaseura</KustantajanNimi>
+	<KustannuspaikkaTeksti>Turku</KustannuspaikkaTeksti>
+	<MuotoKoodi>6</MuotoKoodi>
+	<TaidetyyppiKoodi>1</TaidetyyppiKoodi>
+	<TieteenalaKoodit>
+		<TieteenalaKoodi JNro="1">6132</TieteenalaKoodi>
+	</TieteenalaKoodit>
+	<TaiteenalaKoodit>
+		<TaiteenalaKoodi JNro="1">7</TaiteenalaKoodi>
+	</TaiteenalaKoodit>
+	<YhteisjulkaisuKVKytkin>0</YhteisjulkaisuKVKytkin>
+	<JulkaisunKansainvalisyysKytkin>0</JulkaisunKansainvalisyysKytkin>
+	<JulkaisunKieliKoodi>fi</JulkaisunKieliKoodi>
+	<AvoinSaatavuusKoodi>0</AvoinSaatavuusKoodi>
+	<AvoinSaatavuusKytkin>0</AvoinSaatavuusKytkin>
+	<JulkaisuKanavaOA>0</JulkaisuKanavaOA>
+	<YhteisjulkaisuYritysKytkin>0</YhteisjulkaisuYritysKytkin>
+	<RinnakkaistallennettuKytkin>0</RinnakkaistallennettuKytkin>
+	<Tekijat>
+		<Tekija>
+			<Sukunimi>Ilveskorpi</Sukunimi>
+			<Etunimet>Sara</Etunimet>
+				<Yksikot>
+					<YksikkoKoodi>TS808</YksikkoKoodi>
+				</Yksikot>
+			<ORCID>0000-0000-0000-0000</ORCID>
+		</Tekija>
+	</Tekijat>
+</Julkaisu>
+
+<!-- ///I1 julkaisua vastaava esimerkki -->
+
+<Julkaisu>
+	<OrganisaatioTunnus>99999</OrganisaatioTunnus>
+	<JulkaisunTilaKoodi>2</JulkaisunTilaKoodi>
+	<JulkaisunOrgTunnus>123456</JulkaisunOrgTunnus>
+	<JulkaisunOrgYksikot>
+		<YksikkoKoodi>101i</YksikkoKoodi>
+	</JulkaisunOrgYksikot>
+	<JulkaisuVuosi>2023</JulkaisuVuosi>
+	<JulkaisunNimi>Podcastin perusteet -sarja</JulkaisunNimi>
+	<TekijatiedotTeksti>Tekijä, T.</TekijatiedotTeksti>
+	<MuotoKoodi>7</MuotoKoodi>
+	<YleisoKoodi>0</YleisoKoodi>
+	<AVSovellusTyyppikoodi>2</AVSovellusTyyppikoodi>
+	<TieteenalaKoodit>
+		<TieteenalaKoodi JNro="1">6132</TieteenalaKoodi>
+	</TieteenalaKoodit>
+	<YhteisjulkaisuKVKytkin>0</YhteisjulkaisuKVKytkin>
+	<JulkaisunKansainvalisyysKytkin>0</JulkaisunKansainvalisyysKytkin>
+	<JulkaisunKieliKoodi>fi</JulkaisunKieliKoodi>
+	<AvoinSaatavuusKoodi>0</AvoinSaatavuusKoodi>
+	<AvoinSaatavuusKytkin>0</AvoinSaatavuusKytkin>
+	<JulkaisuKanavaOA>0</JulkaisuKanavaOA>
+	<YhteisjulkaisuYritysKytkin>0</YhteisjulkaisuYritysKytkin>
+	<RinnakkaistallennettuKytkin>0</RinnakkaistallennettuKytkin>
+	<Tekijat>
+		<Tekija>
+			<Sukunimi>Tekijä</Sukunimi>
+			<Etunimet>Teppo</Etunimet>
+			<Yksikot>
+				<YksikkoKoodi>EVH5150</YksikkoKoodi>
+			</Yksikot>
+			<ORCID>0000-0000-0000-0000</ORCID>
+		</Tekija>
+	</Tekijat>
+</Julkaisu>
+</Julkaisut>
