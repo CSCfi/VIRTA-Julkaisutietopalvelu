@@ -8,16 +8,6 @@
 	attributeFormDefault="unqualified" 
 	version="1.12">
 	
-	<xs:simpleType name="RahoittajaOrganisaatioTunnusTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Hankkeen rahoittaneen organisaation tunnus 	
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="20"/>
-		</xs:restriction>
-	</xs:simpleType>
 	
 	<xs:simpleType name="OrganisaatioTunnusTyyppi">
 		<xs:annotation>
@@ -28,54 +18,54 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="20"/>
-			<xs:enumeration value="01903"/> <!-- AA -->
-			<xs:enumeration value="02535"/> <!-- ARCADA -->
-			<xs:enumeration value="10076"/> <!-- AYO -->
-			<xs:enumeration value="02536"/> <!-- CENTRIA -->
-			<xs:enumeration value="02623"/> <!-- DIAK -->
-			<xs:enumeration value="10056"/> <!-- HAAGAHEL -->
-			<xs:enumeration value="02467"/> <!-- HAMK -->
-			<xs:enumeration value="02631"/> <!-- HUMAK -->
-			<xs:enumeration value="01901"/> <!-- HY -->
-			<xs:enumeration value="10088"/> <!-- ISY -->
-			<xs:enumeration value="02504"/> <!-- JAMK -->
-			<xs:enumeration value="01906"/> <!-- JY -->
-			<xs:enumeration value="02473"/> <!-- KAMK -->
-			<xs:enumeration value="02469"/> <!-- KARELIA -->
-			<xs:enumeration value="02608"/> <!-- KYAMK -->
-			<xs:enumeration value="10126"/> <!-- LAB -->
-			<xs:enumeration value="02470"/> <!-- LAMK -->
-			<xs:enumeration value="10108"/> <!-- LAPINAMK -->
-			<xs:enumeration value="02629"/> <!-- LAUREA -->
-			<xs:enumeration value="01918"/> <!-- LAY -->
-			<xs:enumeration value="01914"/> <!-- LTY -->
-			<xs:enumeration value="02506"/> <!-- MAMK -->
-			<xs:enumeration value="10065"/> <!-- METROPOL -->
-			<xs:enumeration value="02358"/> <!-- MPKK -->
-			<xs:enumeration value="10066"/> <!-- NOVIA -->
-			<xs:enumeration value="02471"/> <!-- OAMK -->
-			<xs:enumeration value="01904"/> <!-- OY -->
-			<xs:enumeration value="02557"/> <!-- POLAMK -->
-			<xs:enumeration value="02609"/> <!-- SAIMAA -->
-			<xs:enumeration value="02507"/> <!-- SAMK -->
-			<xs:enumeration value="02537"/> <!-- SAVONIA -->
-			<xs:enumeration value="02472"/> <!-- SEAMK -->
-			<xs:enumeration value="01910"/> <!-- SHH -->
-			<xs:enumeration value="10103"/> <!-- TAIY -->
-			<xs:enumeration value="02630"/> <!-- TAMK -->
-			<xs:enumeration value="01905"/> <!-- TaY -->
-			<xs:enumeration value="01915"/> <!-- TTY -->
-			<xs:enumeration value="10122"/> <!-- TAU -->
-			<xs:enumeration value="02509"/> <!-- TUAMK -->
-			<xs:enumeration value="10089"/> <!-- TY -->
-			<xs:enumeration value="02627"/> <!-- VAMK -->
-			<xs:enumeration value="01913"/> <!-- VY -->
-			<xs:enumeration value="01717"/>  <!--Teatterikorkeakoulu -->
-			<xs:enumeration value="01740"/>  <!--Kuvataideakatemia -->
-			<xs:enumeration value="01742"/>  <!--Sibelius-Akatemia -->
-			<xs:enumeration value="10103"/>   <!--Taideyliopisto -->
-			<xs:enumeration value="02505"/>    <!--Kemi-Tornion ammattikorkeakoulu -->
-			<xs:enumeration value="02538"/>    <!--Rovaniemen ammattikorkeakoulu -->
+			<xs:enumeration value="01903"/> 	<!-- AA -->
+			<xs:enumeration value="02535"/> 	<!-- ARCADA -->
+			<xs:enumeration value="10076"/> 	<!-- AYO -->
+			<xs:enumeration value="02536"/> 	<!-- CENTRIA -->
+			<xs:enumeration value="02623"/> 	<!-- DIAK -->
+			<xs:enumeration value="10056"/> 	<!-- HAAGAHEL -->
+			<xs:enumeration value="02467"/> 	<!-- HAMK -->
+			<xs:enumeration value="02631"/> 	<!-- HUMAK -->
+			<xs:enumeration value="01901"/> 	<!-- HY -->
+			<xs:enumeration value="10088"/> 	<!-- ISY -->
+			<xs:enumeration value="02504"/> 	<!-- JAMK -->
+			<xs:enumeration value="01906"/> 	<!-- JY -->
+			<xs:enumeration value="02473"/> 	<!-- KAMK -->
+			<xs:enumeration value="02469"/> 	<!-- KARELIA -->
+			<xs:enumeration value="02608"/> 	<!-- KYAMK -->
+			<xs:enumeration value="10126"/> 	<!-- LAB -->
+			<xs:enumeration value="02470"/> 	<!-- LAMK -->
+			<xs:enumeration value="10108"/> 	<!-- LAPINAMK -->
+			<xs:enumeration value="02629"/> 	<!-- LAUREA -->
+			<xs:enumeration value="01918"/> 	<!-- LAY -->
+			<xs:enumeration value="01914"/> 	<!-- LTY -->
+			<xs:enumeration value="02506"/> 	<!-- MAMK -->
+			<xs:enumeration value="10065"/> 	<!-- METROPOL -->
+			<xs:enumeration value="02358"/> 	<!-- MPKK -->
+			<xs:enumeration value="10066"/> 	<!-- NOVIA -->
+			<xs:enumeration value="02471"/> 	<!-- OAMK -->
+			<xs:enumeration value="01904"/> 	<!-- OY -->
+			<xs:enumeration value="02557"/> 	<!-- POLAMK -->
+			<xs:enumeration value="02609"/> 	<!-- SAIMAA -->
+			<xs:enumeration value="02507"/> 	<!-- SAMK -->
+			<xs:enumeration value="02537"/> 	<!-- SAVONIA -->
+			<xs:enumeration value="02472"/> 	<!-- SEAMK -->
+			<xs:enumeration value="01910"/> 	<!-- SHH -->
+			<xs:enumeration value="10103"/> 	<!-- TAIY -->
+			<xs:enumeration value="02630"/> 	<!-- TAMK -->
+			<xs:enumeration value="01905"/> 	<!-- TaY -->
+			<xs:enumeration value="01915"/> 	<!-- TTY -->
+			<xs:enumeration value="10122"/> 	<!-- TAU -->
+			<xs:enumeration value="02509"/> 	<!-- TUAMK -->
+			<xs:enumeration value="10089"/> 	<!-- TY -->
+			<xs:enumeration value="02627"/> 	<!-- VAMK -->
+			<xs:enumeration value="01913"/> 	<!-- VY -->
+			<xs:enumeration value="01717"/>  	<!-- Teatterikorkeakoulu -->
+			<xs:enumeration value="01740"/>  	<!-- Kuvataideakatemia -->
+			<xs:enumeration value="01742"/>  	<!-- Sibelius-Akatemia -->
+			<xs:enumeration value="10103"/>   	<!-- Taideyliopisto -->
+			<xs:enumeration value="02505"/>    	<!-- Kemi-Tornion ammattikorkeakoulu -->
+			<xs:enumeration value="02538"/>    	<!-- Rovaniemen ammattikorkeakoulu -->
 			<xs:enumeration value="4080015"/>	<!-- Elintarviketurvallisuusvirasto -->
 			<xs:enumeration value="5040011"/>	<!-- Geologian tutkimuskeskus --> 
 			<xs:enumeration value="4940015"/>	<!-- Ilmatieteen laitos -->
@@ -83,26 +73,26 @@
 			<xs:enumeration value="4020217"/>	<!-- Maanmittauslaitos -->
 			<xs:enumeration value="7020017"/>	<!-- Suomen ympäristökeskus -->
 			<xs:enumeration value="5550012"/>	<!-- Säteilyturvakeskus -->
-			<xs:enumeration value="26473754"/>       <!-- Teknologian tutkimuskeskus VTT Oy -->
+			<xs:enumeration value="26473754"/>  <!-- Teknologian tutkimuskeskus VTT Oy -->
 			<xs:enumeration value="5610017"/>	<!-- Terveyden ja hyvinvoinnin laitos -->
 			<xs:enumeration value="02202669"/>	<!-- Työterveyslaitos -->
 			<xs:enumeration value="1120017"/>	<!-- Ulkopoliittinen instituutti -->
 			<xs:enumeration value="3060016"/>	<!-- Valtion taloudellinen tutkimuskeskus -->
 			<xs:enumeration value="02022481"/>	<!-- Suomen Pankki -->
-			<xs:enumeration value="558005"/>	        <!-- Lääkealan turvallisuus- ja kehittämiskeskus -->
-			<xs:enumeration value="411001"/>	        <!-- Maa- ja elintarviketalouden tutkimuskeskus -->
-			<xs:enumeration value="404001"/>	        <!-- Metsäntutkimuslaitos -->
-			<xs:enumeration value="15675350"/>       <!-- Helsingin seudun yliopistollisen keskussairaalan erityisvastuualue -->
+			<xs:enumeration value="558005"/>	<!-- Lääkealan turvallisuus- ja kehittämiskeskus -->
+			<xs:enumeration value="411001"/>	<!-- Maa- ja elintarviketalouden tutkimuskeskus -->
+			<xs:enumeration value="404001"/>	<!-- Metsäntutkimuslaitos -->
+			<xs:enumeration value="15675350"/>  <!-- Helsingin seudun yliopistollisen keskussairaalan erityisvastuualue -->
 			<xs:enumeration value="08265978"/>	<!-- Tampereen yliopistollisen sairaalan erityisvastuualue -->
 			<xs:enumeration value="06794809"/>	<!-- Oulun yliopistollisen sairaalan erityisvastuualue -->
 			<xs:enumeration value="08282559"/>	<!-- Turun yliopistollisen keskussairaalan erityisvastuualue -->
 			<xs:enumeration value="01714953"/>	<!-- Kuopion yliopistollisen sairaalan erityisvastuualue -->
-			<xs:enumeration value="99999"/> 		<!-- Tuntematon organisaatio / Yhteisjulkaisun Organisaatio -->
+			<xs:enumeration value="99999"/> 	<!-- Tuntematon organisaatio / Yhteisjulkaisun Organisaatio -->
 			<xs:enumeration value="22809791"/>  <!-- Orton -->
 			<xs:enumeration value="02462460"/>  <!-- Kela -->
-			<xs:enumeration value="05247045"/>  <!-- TSV -->
-			<xs:enumeration value="052470454"/>  <!-- TENK -->
-			<xs:enumeration value="052470455"/>  <!-- TJNK -->
+			<xs:enumeration value="05247045"/>	<!-- TSV -->
+			<xs:enumeration value="052470454"/> <!-- TENK -->
+			<xs:enumeration value="052470455"/> <!-- TJNK -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -115,10 +105,10 @@
 		<xs:restriction base="xs:integer">
 			<xs:totalDigits value="2"/>
 			  <xs:enumeration value="0"/> <!-- Tuntematon -->
-			  <xs:enumeration value="1"/> <!-- Yliopitos -->
+			  <xs:enumeration value="1"/> <!-- Yliopisto -->
 			  <xs:enumeration value="2"/> <!-- Ammattikorkeakoulu -->
 			  <xs:enumeration value="3"/> <!-- Tutkimuslaitos -->
-			  <xs:enumeration value="4"/> <!-- Ylisopistollisen sairaala -->
+			  <xs:enumeration value="4"/> <!-- Yliopistollinen sairaala -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -236,7 +226,6 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="100"/>
-			<!-- <xs:pattern value="([0-9])*-([0-9])*|([0-9])*"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -265,7 +254,6 @@
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="100"/>
-			<!-- <xs:pattern value="ISBN(-1(?:(0)|3))?:?\x20+(?(1)(?(2)(?:(?=.{13}$)\d{1,5}([ -])\d{1,7}\3\d{1,6}\3(?:\d|x)$)|(?:(?=.{17}$)97(?:8|9)([ -])\d{1,5}\4\d{1,7}\4\d{1,6}\4\d$))|(?(.{13}$)(?:\d{1,5}([ -])\d{1,7}\5\d{1,6}\5(?:\d|x)$)|(?:(?=.{17}$)97(?:8|9)([ -])\d{1,5}\6\d{1,7}\6\d{1,6}\6\d$)))"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -596,7 +584,6 @@
 		<xs:restriction base="xs:string">
 			<xs:minLength value="1"/>
 			<xs:maxLength value="100"/>
-			<!-- <xs:pattern value="([0-9]){4}-([0-9]){3}[0-9xX]"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -608,7 +595,6 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="200"/>
-			<!-- <xs:pattern value="([0-9])*-([0-9])*|([0-9])*"/> -->
 		</xs:restriction>
 	</xs:simpleType>
 	
@@ -725,200 +711,200 @@
 			<xs:maxLength value="20"/>
 			<xs:enumeration value="20"/>
 			<xs:enumeration value="98"/>
-			<xs:enumeration value="aa"/>      <!--  afar  -->
-	        <xs:enumeration value="ab"/>      <!--  abhaasi  -->
-			<xs:enumeration value="ae"/>      <!--  avesta  -->
-			<xs:enumeration value="af"/>      <!--  afrikaans  -->
-			<xs:enumeration value="ak"/>      <!--  akan  -->
-			<xs:enumeration value="am"/>      <!--  amhara  -->
-			<xs:enumeration value="ar"/>      <!--  arabia  -->
-			<xs:enumeration value="an"/>      <!--  aragonia  -->
-			<xs:enumeration value="as"/>      <!--  assami  -->
-			<xs:enumeration value="av"/>      <!--  avaari  -->
-			<xs:enumeration value="ay"/>      <!--  aimara  -->
-			<xs:enumeration value="az"/>      <!--  azeri, aiemmin myös: azerbaidžani*  -->
-			<xs:enumeration value="ba"/>      <!--  baškiiri*  -->
-			<xs:enumeration value="be"/>      <!--  valkovenäjä  -->
-			<xs:enumeration value="bg"/>      <!--  bulgaria  -->
-			<xs:enumeration value="bh"/>      <!--  biharikieli, aiemmin: bihari*  -->
-			<xs:enumeration value="bi"/>      <!--  bislama  -->
-			<xs:enumeration value="bm"/>      <!--  bambara  -->
-			<xs:enumeration value="bn"/>      <!--  bengali			 bengali  -->
-			<xs:enumeration value="bo"/>      <!--  tiibet  -->
-			<xs:enumeration value="br"/>      <!--  bretoni  -->
-			<xs:enumeration value="bs"/>      <!--  bosnia  -->
-			<xs:enumeration value="ca"/>      <!--  katalaani*  -->
-			<xs:enumeration value="ce"/>      <!--  tšetšeeni  -->
-			<xs:enumeration value="ch"/>      <!--  tšamorro  -->
-			<xs:enumeration value="co"/>      <!--  korsika  -->
-			<xs:enumeration value="cr"/>      <!--  cree  -->
-			<xs:enumeration value="cs"/>      <!--  tšekki  -->
-			<xs:enumeration value="cu"/>      <!--  kirkkoslaavi  -->
-			<xs:enumeration value="cv"/>      <!--  tšuvassi  -->
-			<xs:enumeration value="cy"/>      <!--  kymri, aiemmin myös: wales*  -->
-			<xs:enumeration value="da"/>      <!--  tanska  -->
-			<xs:enumeration value="de"/>      <!--  saksa  -->
-			<xs:enumeration value="dv"/>      <!--  divehi  -->
-			<xs:enumeration value="dz"/>      <!--  dzongkha, aiemmin myös: bhutani*  -->
-			<xs:enumeration value="ee"/>      <!--  ewe  -->
-			<xs:enumeration value="el"/>      <!--  kreikka, uuskreikka (vuoden 1453 jälkeen)  -->
-			<xs:enumeration value="en"/>      <!--  englanti  -->
-			<xs:enumeration value="eo"/>      <!--  esperanto  -->
-			<xs:enumeration value="es"/>      <!--  espanja  -->
-			<xs:enumeration value="et"/>      <!--  viro, aiemmin myös: eesti*  -->
-			<xs:enumeration value="eu"/>      <!--  baski, euskara*  -->
-			<xs:enumeration value="fa"/>      <!--  farsi, persia  -->
-			<xs:enumeration value="ff"/>      <!--  fulani, aiemmin myös: fulfulde*  -->
-			<xs:enumeration value="fi"/>      <!--  suomi  -->
-			<xs:enumeration value="fj"/>      <!--  fidži  -->
-			<xs:enumeration value="fo"/>      <!--  fääri  -->
-			<xs:enumeration value="fr"/>      <!--  ranska  -->
-			<xs:enumeration value="fy"/>      <!--  länsifriisi, aiemmin: friisi*  -->
-			<xs:enumeration value="ga"/>      <!--  iiri*  -->
-			<xs:enumeration value="gd"/>      <!--  gaeli  -->
-			<xs:enumeration value="gl"/>      <!--  galicia  -->
-			<xs:enumeration value="gn"/>      <!--  guarani  -->
-			<xs:enumeration value="gu"/>      <!--  gudžarati  -->
-			<xs:enumeration value="gv"/>      <!--  manksi  -->
-			<xs:enumeration value="ha"/>      <!--  hausa  -->
-			<xs:enumeration value="he"/>      <!--  heprea  -->
-			<xs:enumeration value="hi"/>      <!--  hindi  -->
-			<xs:enumeration value="ho"/>      <!--  hiri-motu  -->
-			<xs:enumeration value="hr"/>      <!--  kroatia  -->
-			<xs:enumeration value="ht"/>      <!--  haiti  -->
-			<xs:enumeration value="hu"/>      <!--  unkari  -->
-			<xs:enumeration value="hy"/>      <!--  armenia  -->
-			<xs:enumeration value="hz"/>      <!--  herero  -->
-			<xs:enumeration value="ia"/>      <!--  interlingua (International Auxiliary Language Association)  -->
-			<xs:enumeration value="id"/>      <!--  indonesia, aiemmin myös: bahasa indonesia*  -->
-			<xs:enumeration value="ie"/>      <!--  interlingue, occidental*  -->
-			<xs:enumeration value="ig"/>      <!--  igbo, aiemmin myös: ibo*  -->
-			<xs:enumeration value="ii"/>      <!--  sichuanin-yi  -->
-			<xs:enumeration value="ik"/>      <!--  inupiaq, inupiatun  -->
-			<xs:enumeration value="io"/>      <!--  ido  -->
-			<xs:enumeration value="is"/>      <!--  islanti  -->
-			<xs:enumeration value="it"/>      <!--  italia  -->
-			<xs:enumeration value="iu"/>      <!--  inuktitut  -->
-			<xs:enumeration value="ja"/>      <!--  japani  -->
-			<xs:enumeration value="jv"/>      <!--  jaava*  -->
-			<xs:enumeration value="ka"/>      <!--  georgia; aiemmin myös: gruusia*  -->
-			<xs:enumeration value="kg"/>      <!--  kongo, aiemmin myös: kikongo*  -->
-			<xs:enumeration value="ki"/>      <!--  kikuju  -->
-			<xs:enumeration value="kj"/>      <!--  kuanjama, aiemmin myös: kwanjama*  -->
-			<xs:enumeration value="kk"/>      <!--  kazakki  -->
-			<xs:enumeration value="kl"/>      <!--  kalaallisut, grönlanti*  -->
-			<xs:enumeration value="km"/>      <!--  keskikhmer, aiemmin: khmer, kambodža*  -->
-			<xs:enumeration value="kn"/>      <!--  kannada  -->
-			<xs:enumeration value="ko"/>      <!--  korea  -->
-			<xs:enumeration value="kr"/>      <!--  kanuri  -->
-			<xs:enumeration value="ks"/>      <!--  kašmiri  -->
-			<xs:enumeration value="ku"/>      <!--  kurdi  -->
-			<xs:enumeration value="kv"/>      <!--  komi  -->
-			<xs:enumeration value="kw"/>      <!--  korni  -->
-			<xs:enumeration value="ky"/>      <!--  kirgiisi*  -->
-			<xs:enumeration value="la"/>      <!--  latina  -->
-			<xs:enumeration value="lb"/>      <!--  luxemburg, myös: letzeburg*  -->
-			<xs:enumeration value="lg"/>      <!--  ganda, aiemmin myös: luganda*  -->
-			<xs:enumeration value="ln"/>      <!--  lingala  -->
-			<xs:enumeration value="li"/>      <!--  limburgi  -->
-			<xs:enumeration value="lo"/>      <!--  lao  -->
-			<xs:enumeration value="lt"/>      <!--  liettua  -->
-			<xs:enumeration value="lu"/>      <!--  katanganluba, aiemmin myös: luba*  -->
-			<xs:enumeration value="lv"/>      <!--  latvia, aiemmin myös: lätti*  -->
-			<xs:enumeration value="mg"/>      <!--  malagasi, aiemmin myös: madagassi*  -->
-			<xs:enumeration value="mh"/>      <!--  marshall  -->
-			<xs:enumeration value="mi"/>      <!--  maori  -->
-			<xs:enumeration value="mk"/>      <!--  makedonia  -->
-			<xs:enumeration value="ml"/>      <!--  malajalam  -->
-			<xs:enumeration value="mn"/>      <!--  mongoli  -->
-			<xs:enumeration value="mr"/>      <!--  marathi  -->
-			<xs:enumeration value="ms"/>      <!--  malaiji  -->
-			<xs:enumeration value="mt"/>      <!--  malta  -->
-			<xs:enumeration value="my"/>      <!--  burma  -->
-			<xs:enumeration value="na"/>      <!--  nauru  -->
-			<xs:enumeration value="nb"/>      <!--  norjan bokmål, aiemmin myös: kirjanorja*  -->
-			<xs:enumeration value="nd"/>      <!--  pohjoisndebele  -->
-			<xs:enumeration value="ne"/>      <!--  nepali  -->
-			<xs:enumeration value="ng"/>      <!--  ndonga  -->
-			<xs:enumeration value="nl"/>      <!--  hollanti  -->
-			<xs:enumeration value="nn"/>      <!--  norjan nynorsk, aiemmin myös: uusnorja*  -->
-			<xs:enumeration value="no"/>      <!--  norja  -->
-			<xs:enumeration value="nr"/>      <!--  etelä-ndebele*  -->
-			<xs:enumeration value="nv"/>      <!--  navajo  -->
-			<xs:enumeration value="ny"/>      <!--  njandža, myös: tšitšewa, tšewa*  -->
-			<xs:enumeration value="oc"/>      <!--  oksitaani (1500-luvulta lähtien), myös: provensaali*  -->
-			<xs:enumeration value="oj"/>      <!--  odžibwa  -->
-			<xs:enumeration value="om"/>      <!--  oromo, aiemmin myös: afan oromo*  -->
-			<xs:enumeration value="or"/>      <!--  orija  -->
-			<xs:enumeration value="os"/>      <!--  osseetti  -->
-			<xs:enumeration value="pa"/>      <!--  pandžabi*  -->
-			<xs:enumeration value="pi"/>      <!--  paali  -->
-			<xs:enumeration value="pl"/>      <!--  puola  -->
-			<xs:enumeration value="ps"/>      <!--  paštu, myös: afgaani*  -->
-			<xs:enumeration value="pt"/>      <!--  portugali  -->
-			<xs:enumeration value="qu"/>      <!--  ketšua  -->
-			<xs:enumeration value="rm"/>      <!--  retoromaani  -->
-			<xs:enumeration value="rn"/>      <!--  rundi, aiemmin myös: kirundi*  -->
-			<xs:enumeration value="ro"/>      <!--  romania  -->
-			<xs:enumeration value="ru"/>      <!--  venäjä  -->
-			<xs:enumeration value="rw"/>      <!--  ruanda, aiemmin myös: kinjaruanda, njaruanda*  -->
-			<xs:enumeration value="sa"/>      <!--  sanskrit  -->
-			<xs:enumeration value="sc"/>      <!--  sardi  -->
-			<xs:enumeration value="sd"/>      <!--  sindhi  -->
-			<xs:enumeration value="se"/>      <!--  pohjoissaame*  -->
-			<xs:enumeration value="sg"/>      <!--  sango  -->
-			<xs:enumeration value="si"/>      <!--  sinhala, aiemmin: singali*  -->
-			<xs:enumeration value="sk"/>      <!--  slovakki  -->
-			<xs:enumeration value="sl"/>      <!--  sloveeni  -->
-			<xs:enumeration value="sm"/>      <!--  samoa  -->
-			<xs:enumeration value="sn"/>      <!--  šona, aiemmin: shona*  -->
-			<xs:enumeration value="so"/>      <!--  somali  -->
-			<xs:enumeration value="sq"/>      <!--  albania  -->
-			<xs:enumeration value="sr"/>      <!--  serbia  -->
-			<xs:enumeration value="ss"/>      <!--  swazi, aiemmin myös: siswati*  -->
-			<xs:enumeration value="st"/>      <!--  eteläsotho*  -->
-			<xs:enumeration value="su"/>      <!--  sunda  -->
-			<xs:enumeration value="sv"/>      <!--  ruotsi  -->
-			<xs:enumeration value="sw"/>      <!--  swahili, aiemmin myös: suahili*  -->
-			<xs:enumeration value="ta"/>      <!--  tamili  -->
-			<xs:enumeration value="te"/>      <!--  telugu  -->
-			<xs:enumeration value="tg"/>      <!--  tadžikki  -->
-			<xs:enumeration value="th"/>      <!--  thai*  -->
-			<xs:enumeration value="ti"/>      <!--  tigrinja  -->
-			<xs:enumeration value="tk"/>      <!--  turkmeeni  -->
-			<xs:enumeration value="tl"/>      <!--  tagalog, aiemmin myös: pilipino*  -->
-			<xs:enumeration value="tn"/>      <!--  tswana*  -->
-			<xs:enumeration value="to"/>      <!--  tongantonga  -->
-			<xs:enumeration value="tr"/>      <!--  turkki*  -->
-			<xs:enumeration value="ts"/>      <!--  tsonga  -->
-			<xs:enumeration value="tt"/>      <!--  tataari  -->
-			<xs:enumeration value="tw"/>      <!--  twi  -->
-			<xs:enumeration value="ty"/>      <!--  tahiti  -->
-			<xs:enumeration value="ug"/>      <!--  uiguuri  -->
-			<xs:enumeration value="uk"/>      <!--  ukraina  -->
-			<xs:enumeration value="ur"/>      <!--  urdu  -->
-			<xs:enumeration value="uz"/>      <!--  uzbekki  -->
-			<xs:enumeration value="wa"/>      <!--  valloni  -->
-			<xs:enumeration value="ve"/>      <!--  venda  -->
-			<xs:enumeration value="vi"/>      <!--  vietnam*  -->
-			<xs:enumeration value="vo"/>      <!--  volapük  -->
-			<xs:enumeration value="wo"/>      <!--  wolof  -->
-			<xs:enumeration value="xh"/>      <!--  xhosa  -->
-			<xs:enumeration value="yi"/>      <!--  jiddiš, aiemmin myös: jiddi*  -->
-			<xs:enumeration value="yo"/>      <!--  joruba  -->
-			<xs:enumeration value="za"/>      <!--  zhuang  -->
-			<xs:enumeration value="zh"/>      <!--  kiina  -->
-			<xs:enumeration value="zu"/>      <!--  zulu  -->
-			<xs:enumeration value="smn"/>      <!--  inarinsaame   -->
-			<xs:enumeration value="smj"/>      <!--  luulajansaame   -->
-			<xs:enumeration value="sme"/>      <!--  pohjoissaame   -->
-			<xs:enumeration value="sms"/>      <!--  koltansaame   -->
-			<xs:enumeration value="sma"/>      <!--  eteläsaame   -->
-			<xs:enumeration value="smi"/>      <!--  muut saamen kielet   -->
-			<xs:enumeration value="fit"/>      <!--  mäenkieli   -->
-			<xs:enumeration value="fkv"/>      <!--  kveeni   -->
-			<xs:enumeration value="vep"/>      <!--  vepsä   -->
-			<xs:enumeration value="krl"/>      <!--  karjala   -->
+			<xs:enumeration value="aa"/>    <!-- afar -->
+	        <xs:enumeration value="ab"/>    <!-- abhaasi -->
+			<xs:enumeration value="ae"/>    <!-- avesta -->
+			<xs:enumeration value="af"/>    <!-- afrikaans -->
+			<xs:enumeration value="ak"/>    <!-- akan -->
+			<xs:enumeration value="am"/>    <!-- amhara -->
+			<xs:enumeration value="ar"/>    <!-- arabia -->
+			<xs:enumeration value="an"/>    <!-- aragonia -->
+			<xs:enumeration value="as"/>    <!-- assami -->
+			<xs:enumeration value="av"/>    <!-- avaari -->
+			<xs:enumeration value="ay"/>    <!-- aimara -->
+			<xs:enumeration value="az"/>    <!-- azeri, aiemmin myös: azerbaidžani* -->
+			<xs:enumeration value="ba"/>    <!-- baškiiri* -->
+			<xs:enumeration value="be"/>    <!-- valkovenäjä -->
+			<xs:enumeration value="bg"/>    <!-- bulgaria -->
+			<xs:enumeration value="bh"/>    <!-- biharikieli, aiemmin: bihari* -->
+			<xs:enumeration value="bi"/>    <!-- bislama -->
+			<xs:enumeration value="bm"/>    <!-- bambara -->
+			<xs:enumeration value="bn"/>    <!-- bengali -->
+			<xs:enumeration value="bo"/>    <!-- tiibet -->
+			<xs:enumeration value="br"/>    <!-- bretoni -->
+			<xs:enumeration value="bs"/>    <!-- bosnia -->
+			<xs:enumeration value="ca"/>    <!-- katalaani* -->
+			<xs:enumeration value="ce"/>    <!-- tšetšeeni -->
+			<xs:enumeration value="ch"/>    <!-- tšamorro -->
+			<xs:enumeration value="co"/>    <!-- korsika -->
+			<xs:enumeration value="cr"/>    <!-- cree -->
+			<xs:enumeration value="cs"/>    <!-- tšekki -->
+			<xs:enumeration value="cu"/>    <!-- kirkkoslaavi -->
+			<xs:enumeration value="cv"/>    <!-- tšuvassi -->
+			<xs:enumeration value="cy"/>    <!-- kymri, aiemmin myös: wales* -->
+			<xs:enumeration value="da"/>    <!-- tanska -->
+			<xs:enumeration value="de"/>    <!-- saksa -->
+			<xs:enumeration value="dv"/>    <!-- divehi -->
+			<xs:enumeration value="dz"/>    <!-- dzongkha, aiemmin myös: bhutani* -->
+			<xs:enumeration value="ee"/>    <!-- ewe -->
+			<xs:enumeration value="el"/>    <!-- kreikka, uuskreikka (vuoden 1453 jälkeen) -->
+			<xs:enumeration value="en"/>    <!-- englanti -->
+			<xs:enumeration value="eo"/>    <!-- esperanto -->
+			<xs:enumeration value="es"/>    <!-- espanja -->
+			<xs:enumeration value="et"/>    <!-- viro, aiemmin myös: eesti* -->
+			<xs:enumeration value="eu"/>    <!-- baski, euskara* -->
+			<xs:enumeration value="fa"/>    <!-- farsi, persia -->
+			<xs:enumeration value="ff"/>    <!-- fulani, aiemmin myös: fulfulde* -->
+			<xs:enumeration value="fi"/>    <!-- suomi -->
+			<xs:enumeration value="fj"/>    <!-- fidži -->
+			<xs:enumeration value="fo"/>    <!-- fääri -->
+			<xs:enumeration value="fr"/>    <!-- ranska -->
+			<xs:enumeration value="fy"/>    <!-- länsifriisi, aiemmin: friisi* -->
+			<xs:enumeration value="ga"/>    <!-- iiri* -->
+			<xs:enumeration value="gd"/>    <!-- gaeli -->
+			<xs:enumeration value="gl"/>    <!-- alicia -->
+			<xs:enumeration value="gn"/>    <!-- guarani -->
+			<xs:enumeration value="gu"/>    <!-- gudžarati -->
+			<xs:enumeration value="gv"/>    <!-- manksi -->
+			<xs:enumeration value="ha"/>    <!-- hausa -->
+			<xs:enumeration value="he"/>    <!-- heprea -->
+			<xs:enumeration value="hi"/>    <!-- hindi -->
+			<xs:enumeration value="ho"/>    <!-- hiri-motu -->
+			<xs:enumeration value="hr"/>    <!-- kroatia -->
+			<xs:enumeration value="ht"/>    <!-- haiti -->
+			<xs:enumeration value="hu"/>    <!-- unkari -->
+			<xs:enumeration value="hy"/>    <!-- armenia -->
+			<xs:enumeration value="hz"/>    <!-- herero -->
+			<xs:enumeration value="ia"/>    <!-- interlingua (International Auxiliary Language Association) -->
+			<xs:enumeration value="id"/>    <!-- indonesia, aiemmin myös: bahasa indonesia* -->
+			<xs:enumeration value="ie"/>    <!-- interlingue, occidental* -->
+			<xs:enumeration value="ig"/>    <!-- igbo, aiemmin myös: ibo* -->
+			<xs:enumeration value="ii"/>    <!-- sichuanin-yi -->
+			<xs:enumeration value="ik"/>    <!-- inupiaq, inupiatun -->
+			<xs:enumeration value="io"/>    <!-- ido -->
+			<xs:enumeration value="is"/>    <!-- islanti -->
+			<xs:enumeration value="it"/>    <!-- italia -->
+			<xs:enumeration value="iu"/>    <!-- inuktitut -->
+			<xs:enumeration value="ja"/>    <!-- japani -->
+			<xs:enumeration value="jv"/>    <!-- jaava* -->
+			<xs:enumeration value="ka"/>    <!-- georgia; aiemmin myös: gruusia* -->
+			<xs:enumeration value="kg"/>    <!-- kongo, aiemmin myös: kikongo* -->
+			<xs:enumeration value="ki"/>    <!-- kikuju -->
+			<xs:enumeration value="kj"/>    <!-- kuanjama, aiemmin myös: kwanjama* -->
+			<xs:enumeration value="kk"/>    <!-- kazakki -->
+			<xs:enumeration value="kl"/>    <!-- kalaallisut, grönlanti* -->
+			<xs:enumeration value="km"/>    <!-- keskikhmer, aiemmin: khmer, kambodža* -->
+			<xs:enumeration value="kn"/>    <!-- kannada -->
+			<xs:enumeration value="ko"/>    <!-- korea -->
+			<xs:enumeration value="kr"/>    <!-- kanuri -->
+			<xs:enumeration value="ks"/>    <!-- kašmiri -->
+			<xs:enumeration value="ku"/>    <!-- kurdi -->
+			<xs:enumeration value="kv"/>    <!-- komi -->
+			<xs:enumeration value="kw"/>    <!-- korni -->
+			<xs:enumeration value="ky"/>    <!-- kirgiisi* -->
+			<xs:enumeration value="la"/>    <!-- latina -->
+			<xs:enumeration value="lb"/>    <!-- luxemburg, myös: letzeburg* -->
+			<xs:enumeration value="lg"/>    <!-- ganda, aiemmin myös: luganda* -->
+			<xs:enumeration value="ln"/>    <!-- lingala -->
+			<xs:enumeration value="li"/>    <!-- limburgi -->
+			<xs:enumeration value="lo"/>    <!-- lao -->
+			<xs:enumeration value="lt"/>    <!-- liettua -->
+			<xs:enumeration value="lu"/>    <!-- katanganluba, aiemmin myös: luba* -->
+			<xs:enumeration value="lv"/>    <!-- latvia, aiemmin myös: lätti* -->
+			<xs:enumeration value="mg"/>    <!-- malagasi, aiemmin myös: madagassi* -->
+			<xs:enumeration value="mh"/>    <!-- marshall -->
+			<xs:enumeration value="mi"/>    <!-- maori -->
+			<xs:enumeration value="mk"/>    <!-- makedonia -->
+			<xs:enumeration value="ml"/>    <!-- malajalam -->
+			<xs:enumeration value="mn"/>    <!-- mongoli -->
+			<xs:enumeration value="mr"/>    <!-- marathi -->
+			<xs:enumeration value="ms"/>    <!-- malaiji -->
+			<xs:enumeration value="mt"/>    <!-- malta -->
+			<xs:enumeration value="my"/>    <!-- burma -->
+			<xs:enumeration value="na"/>    <!-- nauru -->
+			<xs:enumeration value="nb"/>    <!-- norjan bokmål, aiemmin myös: kirjanorja* -->
+			<xs:enumeration value="nd"/>    <!-- pohjoisndebele -->
+			<xs:enumeration value="ne"/>    <!-- nepali -->
+			<xs:enumeration value="ng"/>    <!-- ndonga -->
+			<xs:enumeration value="nl"/>    <!-- hollanti -->
+			<xs:enumeration value="nn"/>    <!-- norjan nynorsk, aiemmin myös: uusnorja* -->
+			<xs:enumeration value="no"/>    <!-- norja -->
+			<xs:enumeration value="nr"/>    <!-- etelä-ndebele* -->
+			<xs:enumeration value="nv"/>    <!-- navajo -->
+			<xs:enumeration value="ny"/>    <!-- njandža, myös: tšitšewa, tšewa* -->
+			<xs:enumeration value="oc"/>    <!-- oksitaani (1500-luvulta lähtien), myös: provensaali* -->
+			<xs:enumeration value="oj"/>    <!-- odžibwa -->
+			<xs:enumeration value="om"/>    <!-- oromo, aiemmin myös: afan oromo* -->
+			<xs:enumeration value="or"/>    <!-- orija -->
+			<xs:enumeration value="os"/>    <!-- osseetti -->
+			<xs:enumeration value="pa"/>    <!-- pandžabi* -->
+			<xs:enumeration value="pi"/>    <!-- paali -->
+			<xs:enumeration value="pl"/>    <!-- puola -->
+			<xs:enumeration value="ps"/>    <!-- paštu, myös: afgaani* -->
+			<xs:enumeration value="pt"/>    <!-- portugali -->
+			<xs:enumeration value="qu"/>    <!-- ketšua -->
+			<xs:enumeration value="rm"/>    <!-- retoromaani -->
+			<xs:enumeration value="rn"/>    <!-- rundi, aiemmin myös: kirundi* -->
+			<xs:enumeration value="ro"/>    <!-- romania -->
+			<xs:enumeration value="ru"/>    <!-- venäjä -->
+			<xs:enumeration value="rw"/>    <!-- ruanda, aiemmin myös: kinjaruanda, njaruanda* -->
+			<xs:enumeration value="sa"/>    <!-- sanskrit -->
+			<xs:enumeration value="sc"/>    <!-- sardi -->
+			<xs:enumeration value="sd"/>    <!-- sindhi -->
+			<xs:enumeration value="se"/>    <!-- pohjoissaame* -->
+			<xs:enumeration value="sg"/>    <!-- sango -->
+			<xs:enumeration value="si"/>    <!-- sinhala, aiemmin: singali* -->
+			<xs:enumeration value="sk"/>    <!-- slovakki -->
+			<xs:enumeration value="sl"/>    <!-- sloveeni -->
+			<xs:enumeration value="sm"/>    <!-- samoa -->
+			<xs:enumeration value="sn"/>    <!-- šona, aiemmin: shona* -->
+			<xs:enumeration value="so"/>    <!-- somali -->
+			<xs:enumeration value="sq"/>    <!-- albania -->
+			<xs:enumeration value="sr"/>    <!-- serbia -->
+			<xs:enumeration value="ss"/>    <!-- swazi, aiemmin myös: siswati* -->
+			<xs:enumeration value="st"/>    <!-- eteläsotho* -->
+			<xs:enumeration value="su"/>    <!-- sunda -->
+			<xs:enumeration value="sv"/>    <!-- ruotsi -->
+			<xs:enumeration value="sw"/>    <!-- swahili, aiemmin myös: suahili* -->
+			<xs:enumeration value="ta"/>    <!-- tamili -->
+			<xs:enumeration value="te"/>    <!-- telugu -->
+			<xs:enumeration value="tg"/>    <!-- tadžikki -->
+			<xs:enumeration value="th"/>    <!-- thai* -->
+			<xs:enumeration value="ti"/>    <!-- tigrinja -->
+			<xs:enumeration value="tk"/>    <!-- turkmeeni -->
+			<xs:enumeration value="tl"/>    <!-- tagalog, aiemmin myös: pilipino* -->
+			<xs:enumeration value="tn"/>    <!-- tswana* -->
+			<xs:enumeration value="to"/>    <!-- tongantonga -->
+			<xs:enumeration value="tr"/>    <!-- turkki* -->
+			<xs:enumeration value="ts"/>    <!-- tsonga -->
+			<xs:enumeration value="tt"/>    <!-- tataari -->
+			<xs:enumeration value="tw"/>    <!-- twi -->
+			<xs:enumeration value="ty"/>    <!-- tahiti -->
+			<xs:enumeration value="ug"/>    <!-- uiguuri -->
+			<xs:enumeration value="uk"/>    <!-- ukraina -->
+			<xs:enumeration value="ur"/>    <!-- urdu -->
+			<xs:enumeration value="uz"/>    <!-- uzbekki -->
+			<xs:enumeration value="wa"/>    <!-- valloni -->
+			<xs:enumeration value="ve"/>    <!-- venda -->
+			<xs:enumeration value="vi"/>    <!-- vietnam* -->
+			<xs:enumeration value="vo"/>    <!-- volapük -->
+			<xs:enumeration value="wo"/>    <!-- wolof -->
+			<xs:enumeration value="xh"/>    <!-- xhosa -->
+			<xs:enumeration value="yi"/>    <!-- jiddiš, aiemmin myös: jiddi* -->
+			<xs:enumeration value="yo"/>    <!-- joruba -->
+			<xs:enumeration value="za"/>    <!-- zhuang -->
+			<xs:enumeration value="zh"/>    <!-- kiina -->
+			<xs:enumeration value="zu"/>    <!-- zulu -->
+			<xs:enumeration value="smn"/>	<!-- inarinsaame -->
+			<xs:enumeration value="smj"/>   <!-- luulajansaame -->
+			<xs:enumeration value="sme"/>   <!-- pohjoissaame -->
+			<xs:enumeration value="sms"/>   <!-- koltansaame -->
+			<xs:enumeration value="sma"/>   <!-- eteläsaame -->
+			<xs:enumeration value="smi"/>   <!-- muut saamen kielet -->
+			<xs:enumeration value="fit"/>   <!-- mäenkieli -->
+			<xs:enumeration value="fkv"/>   <!-- kveeni -->
+			<xs:enumeration value="vep"/>   <!-- vepsä -->
+			<xs:enumeration value="krl"/>   <!-- karjala -->
 		</xs:restriction>
 	</xs:simpleType>	
 			
@@ -1036,86 +1022,86 @@
 	<xs:simpleType name="TieteenalaKooditTyyppi">
 		<xs:restriction base="xs:integer">
 			<!-- <xs:enumeration value="1"/> 	LUONNONTIETEET (ei käytössä) -->
-			<xs:enumeration value="111"/> <!-- 	Matematiikka-->
-			<xs:enumeration value="112"/> <!-- 	Tilastotiede-->
-			<xs:enumeration value="113"/> <!-- 	Tietojenkäsittely ja informaatiotieteet-->
-			<xs:enumeration value="114"/> <!-- 	Fysiikka-->
-			<xs:enumeration value="115"/> <!-- 	Avaruustieteet ja tähtitiede-->
-			<xs:enumeration value="116"/> <!-- 	Kemia-->
+			<xs:enumeration value="111"/> 	<!-- Matematiikka -->
+			<xs:enumeration value="112"/> 	<!-- Tilastotiede -->
+			<xs:enumeration value="113"/> 	<!-- Tietojenkäsittely ja informaatiotieteet -->
+			<xs:enumeration value="114"/> 	<!-- Fysiikka -->
+			<xs:enumeration value="115"/> 	<!-- Avaruustieteet ja tähtitiede -->
+			<xs:enumeration value="116"/> 	<!-- Kemia -->
 			<!-- <xs:enumeration value="117"/> 	Maantiede ja ympäristötieteet (ei käytössä) -->
-			<xs:enumeration value="1171"/> <!-- 	Geotieteet-->
-			<xs:enumeration value="1172"/> <!-- 	Ympäristötiede-->
+			<xs:enumeration value="1171"/> 	<!-- Geotieteet -->
+			<xs:enumeration value="1172"/> 	<!-- Ympäristötiede -->
 			<!-- <xs:enumeration value="118"/>  	Biotieteet (ei käytössä) -->
-			<xs:enumeration value="1181"/> <!-- 	Ekologia, evoluutiobiologia-->
-			<xs:enumeration value="1182"/> <!-- 	Biokemia, solu- ja molekyylibiologia-->
-			<xs:enumeration value="1183"/> <!-- 	Kasvibiologia, mikrobiologia, virologia-->
-			<xs:enumeration value="1184"/> <!-- 	Genetiikka, kehitysbiologia, fysiologia-->
-			<xs:enumeration value="119"/> <!-- 	Muut luonnontieteet-->
+			<xs:enumeration value="1181"/> 	<!-- Ekologia, evoluutiobiologia -->
+			<xs:enumeration value="1182"/> 	<!-- Biokemia, solu- ja molekyylibiologia -->
+			<xs:enumeration value="1183"/> 	<!-- Kasvibiologia, mikrobiologia, virologia -->
+			<xs:enumeration value="1184"/> 	<!-- Genetiikka, kehitysbiologia, fysiologia -->
+			<xs:enumeration value="119"/> 	<!-- Muut luonnontieteet -->
 			<!-- <xs:enumeration value="2"/> 	TEKNIIKKA (ei käytössä) -->
-			<xs:enumeration value="211"/> <!-- 	Arkkitehtuuri-->
-			<xs:enumeration value="212"/> <!-- 	Rakennus- ja yhdyskuntatekniikka-->
-			<xs:enumeration value="213"/> <!-- 	Sähkö-, automaatio- ja tietoliikennetekniikka, elektroniikka-->
-			<xs:enumeration value="214"/> <!-- 	Kone- ja valmistustekniikka-->
-			<xs:enumeration value="215"/> <!-- 	Teknillinen kemia, kemian prosessitekniikka-->
-			<xs:enumeration value="216"/> <!-- 	Materiaalitekniikka-->
-			<xs:enumeration value="217"/> <!-- 	Lääketieteen tekniikka-->
-			<xs:enumeration value="218"/> <!-- 	Ympäristötekniikka-->
-			<xs:enumeration value="219"/> <!-- 	Ympäristön bioteknologia-->
-			<xs:enumeration value="220"/> <!-- 	Teollinen bioteknologia-->
-			<xs:enumeration value="221"/> <!-- 	Nanoteknologia-->
-			<xs:enumeration value="222"/> <!-- 	Muu tekniikka-->
+			<xs:enumeration value="211"/> 	<!-- Arkkitehtuuri -->
+			<xs:enumeration value="212"/> 	<!-- Rakennus- ja yhdyskuntatekniikka -->
+			<xs:enumeration value="213"/> 	<!-- Sähkö-, automaatio- ja tietoliikennetekniikka, elektroniikka -->
+			<xs:enumeration value="214"/> 	<!-- Kone- ja valmistustekniikka -->
+			<xs:enumeration value="215"/> 	<!-- Teknillinen kemia, kemian prosessitekniikka -->
+			<xs:enumeration value="216"/> 	<!-- Materiaalitekniikka -->
+			<xs:enumeration value="217"/> 	<!-- Lääketieteen tekniikka -->
+			<xs:enumeration value="218"/> 	<!-- Ympäristötekniikka -->
+			<xs:enumeration value="219"/> 	<!-- Ympäristön bioteknologia -->
+			<xs:enumeration value="220"/> 	<!-- Teollinen bioteknologia -->
+			<xs:enumeration value="221"/> 	<!-- Nanoteknologia -->
+			<xs:enumeration value="222"/> 	<!-- Muu tekniikka -->
 			<!-- <xs:enumeration value="3"/>  	LÄÄKE- JA TERVEYSTIETEET (ei käytössä) -->
 			<!-- <xs:enumeration value="311"/> 	    Peruslääketieteet (ei käytössä) -->
-			<xs:enumeration value="3111"/> <!-- 	Biolääketieteet-->
-			<xs:enumeration value="3112"/> <!-- 	Neurotieteet-->
+			<xs:enumeration value="3111"/> 	<!-- Biolääketieteet -->
+			<xs:enumeration value="3112"/> 	<!-- Neurotieteet -->
 			<!-- <xs:enumeration value="312"/>  	Kliiniset lääketieteet (ei käytössä) -->
-			<xs:enumeration value="3121"/> <!-- 	Sisätaudit-->
-			<xs:enumeration value="3122"/> <!-- 	Syöpätaudit-->
-			<xs:enumeration value="3123"/> <!-- 	Naisten- ja lastentaudit-->
-			<xs:enumeration value="3124"/> <!-- 	Neurologia ja psykiatria-->
-			<xs:enumeration value="3125"/> <!-- 	Korva-, nenä- ja kurkkutaudit, silmätaudit-->
-			<xs:enumeration value="3126"/> <!-- 	Kirurgia, anestesiologia, tehohoito, radiologia-->
-			<xs:enumeration value="313"/> <!-- 	Hammaslääketieteet-->
+			<xs:enumeration value="3121"/> 	<!-- Sisätaudit -->
+			<xs:enumeration value="3122"/> 	<!-- Syöpätaudit -->
+			<xs:enumeration value="3123"/> 	<!-- Naisten- ja lastentaudit -->
+			<xs:enumeration value="3124"/> 	<!-- Neurologia ja psykiatria -->
+			<xs:enumeration value="3125"/> 	<!-- Korva-, nenä- ja kurkkutaudit, silmätaudit -->
+			<xs:enumeration value="3126"/> 	<!-- Kirurgia, anestesiologia, tehohoito, radiologia -->
+			<xs:enumeration value="313"/> 	<!-- Hammaslääketieteet -->
 			<!-- <xs:enumeration value="314"/>  	Terveystieteet (ei käytössä) -->
-			<xs:enumeration value="3141"/> <!-- 	Terveystiede-->
-			<xs:enumeration value="3142"/> <!-- 	Kansanterveystiede, ympäristö ja työterveys-->
-			<xs:enumeration value="315"/> <!-- 	Liikuntatiede-->
-			<xs:enumeration value="316"/> <!-- 	Hoitotiede-->
-			<xs:enumeration value="317"/> <!-- 	Farmasia-->
-			<xs:enumeration value="318"/> <!-- 	Lääketieteen bioteknologia-->
-			<xs:enumeration value="319"/> <!-- 	Oikeuslääketiede ja muut lääketieteet-->
+			<xs:enumeration value="3141"/> 	<!-- Terveystiede -->
+			<xs:enumeration value="3142"/> 	<!-- Kansanterveystiede, ympäristö ja työterveys -->
+			<xs:enumeration value="315"/> 	<!-- Liikuntatiede -->
+			<xs:enumeration value="316"/> 	<!-- Hoitotiede -->
+			<xs:enumeration value="317"/> 	<!-- Farmasia -->
+			<xs:enumeration value="318"/> 	<!-- Lääketieteen bioteknologia -->
+			<xs:enumeration value="319"/> 	<!-- Oikeuslääketiede ja muut lääketieteet -->
 			<!-- <xs:enumeration value="4"/>  	MAATALOUS- JA METSÄTIETEET (ei käytössä) -->
 			<!-- <xs:enumeration value="411"/> 	Maatalous ja metsätieteet (ei käytössä) -->
-			<xs:enumeration value="4111"/> <!-- 	Maataloustiede-->
-			<xs:enumeration value="4112"/> <!-- 	Metsätiede-->
-			<xs:enumeration value="412"/> <!-- 	Kotieläintiede, maitotaloustiede-->
-			<xs:enumeration value="413"/> <!-- 	Eläinlääketiede-->
-			<xs:enumeration value="414"/> <!-- 	Maatalouden bioteknologia-->
-			<xs:enumeration value="415"/> <!-- 	Muut maataloustieteet-->
+			<xs:enumeration value="4111"/> 	<!-- Maataloustiede -->
+			<xs:enumeration value="4112"/> 	<!-- Metsätiede -->
+			<xs:enumeration value="412"/> 	<!-- Kotieläintiede, maitotaloustiede -->
+			<xs:enumeration value="413"/> 	<!-- Eläinlääketiede -->
+			<xs:enumeration value="414"/> 	<!-- Maatalouden bioteknologia -->
+			<xs:enumeration value="415"/> 	<!-- Muut maataloustieteet -->
 			<!-- <xs:enumeration value="5"/>  	YHTEISKUNTATIETEET (ei käytössä) -->
-			<xs:enumeration value="511"/> <!-- 	Kansantaloustiede-->
-			<xs:enumeration value="512"/> <!-- 	Liiketaloustiede-->
-			<xs:enumeration value="513"/> <!-- 	Oikeustiede-->
+			<xs:enumeration value="511"/> 	<!-- Kansantaloustiede -->
+			<xs:enumeration value="512"/> 	<!-- Liiketaloustiede -->
+			<xs:enumeration value="513"/> 	<!-- Oikeustiede -->
 			<!-- <xs:enumeration value="514"/>  	Sosiaalitieteet (ei käytössä) -->
-			<xs:enumeration value="5141"/> <!-- 	Sosiologia-->
-			<xs:enumeration value="5142"/> <!-- 	Sosiaali- ja yhteiskuntapolitiikka-->
-			<xs:enumeration value="515"/> <!-- 	Psykologia-->
-			<xs:enumeration value="516"/> <!-- 	Kasvatustieteet-->
-			<xs:enumeration value="517"/> <!-- 	Valtio-oppi, hallintotiede-->
-			<xs:enumeration value="518"/> <!-- 	Media- ja viestintätieteet-->
-			<xs:enumeration value="519"/> <!-- 	Yhteiskuntamaantiede, talousmaantiede-->
-			<xs:enumeration value="520"/> <!-- 	Muut yhteiskuntatieteet-->
+			<xs:enumeration value="5141"/> 	<!-- Sosiologia -->
+			<xs:enumeration value="5142"/> 	<!-- Sosiaali- ja yhteiskuntapolitiikka -->
+			<xs:enumeration value="515"/> 	<!-- Psykologia -->
+			<xs:enumeration value="516"/> 	<!-- Kasvatustieteet -->
+			<xs:enumeration value="517"/> 	<!-- Valtio-oppi, hallintotiede -->
+			<xs:enumeration value="518"/> 	<!-- Media- ja viestintätieteet -->
+			<xs:enumeration value="519"/> 	<!-- Yhteiskuntamaantiede, talousmaantiede -->
+			<xs:enumeration value="520"/> 	<!-- Muut yhteiskuntatieteet -->
 			<!-- <xs:enumeration value="6"/>  	HUMANISTISET TIETEET (ei käytössä) -->
-			<xs:enumeration value="611"/> <!-- 	Filosofia-->
+			<xs:enumeration value="611"/> 	<!-- Filosofia-->
 			<!-- <xs:enumeration value="612"/>  	Kielitieteet, kirjallisuus (ei käytössä) -->
-			<xs:enumeration value="6121"/> <!-- 	Kielitieteet-->
-			<xs:enumeration value="6122"/> <!-- 	Kirjallisuuden tutkimus-->
+			<xs:enumeration value="6121"/> 	<!-- Kielitieteet -->
+			<xs:enumeration value="6122"/> 	<!-- Kirjallisuuden tutkimus -->
 			<!-- <xs:enumeration value="613"/>  	Taiteiden tutkimus (ei käytössä) -->
-			<xs:enumeration value="6131"/> <!-- 	Teatteri, tanssi, musiikki, muut esittävät taiteet-->
-			<xs:enumeration value="6132"/> <!-- 	Kuvataide ja muotoilu-->
-			<xs:enumeration value="614"/> <!-- 	Teologia-->
-			<xs:enumeration value="615"/> <!--	Historia ja arkeologia-->
-			<xs:enumeration value="616"/> <!-- 	Muut humanistiset tieteet-->
+			<xs:enumeration value="6131"/> 	<!-- Teatteri, tanssi, musiikki, muut esittävät taiteet -->
+			<xs:enumeration value="6132"/> 	<!-- Kuvataide ja muotoilu -->
+			<xs:enumeration value="614"/> 	<!-- Teologia -->
+			<xs:enumeration value="615"/> 	<!-- Historia ja arkeologia -->
+			<xs:enumeration value="616"/> 	<!-- Muut humanistiset tieteet -->
 			<!-- <xs:enumeration value="9"/>  	MUUT (ei käytössä) -->
 			<!-- <xs:enumeration value="999"/>  	Muut (ei käytössä) -->
 		</xs:restriction>
@@ -1123,57 +1109,46 @@
 	
 	<xs:simpleType name="KoulutusalaKooditTyyppi">
 		<xs:restriction base="xs:integer">
-			<xs:enumeration value="1"/>   <!--  Humanistinen ja kasvatusala -->
-			<xs:enumeration value="2"/>   <!--  Kulttuuriala -->
-			<xs:enumeration value="3"/>    <!-- Yhteiskuntatieteiden, liiketalouden ja -->
-			<xs:enumeration value="4"/>   <!--  Luonnontieteiden ala -->
-			<xs:enumeration value="5"/>    <!-- Tekniikan ja liikenteen ala --> 
-			<xs:enumeration value="6"/>    <!-- Luonnonvara- ja ympäristöala -->
-			<xs:enumeration value="7"/>   <!--  Sosiaali-, terveys- ja liikunta-ala --> 
-			<xs:enumeration value="8"/>   <!--  Matkailu-, ravitsemis- ja talousala -->			
-			<xs:enumeration value="75"/>  <!-- Teologinen -->
-			<xs:enumeration value="76"/>  <!-- Humanistinen -->
-			<xs:enumeration value="77"/>  <!-- Taideteollinen -->
-			<xs:enumeration value="78"/>  <!-- Musiikkiala -->
-			<xs:enumeration value="79"/>  <!-- Teatteri- ja tanssiala --> 
-			<xs:enumeration value="80"/>  <!-- Kasvatustieteellinen -->
-			<xs:enumeration value="81"/>  <!-- Liikuntatieteellinen -->
-			<xs:enumeration value="82"/>  <!-- Yhteiskuntatieteellinen -->
-			<xs:enumeration value="83"/>  <!-- Psykologia -->
-			<xs:enumeration value="84"/>  <!-- Terveystieteet -->
-			<xs:enumeration value="85"/>  <!-- Oikeustieteellinen --> 
-			<xs:enumeration value="86"/>  <!-- Kauppatieteellinen -->
-			<xs:enumeration value="87"/>  <!-- Luonnontieteellinen -->
-			<xs:enumeration value="88"/>  <!-- Maatalous metsätieteellinen -->
-			<xs:enumeration value="89"/>  <!-- Teknillistieteellinen  -->
-			<xs:enumeration value="90"/>  <!-- Lääketieteellinen -->
-			<xs:enumeration value="91"/>  <!-- Hammaslääketieteellinen -->
-			<xs:enumeration value="92"/>  <!-- Eläinlääketieteellinen -->
-			<xs:enumeration value="93"/>  <!-- Farmasia --> 
-			<xs:enumeration value="94"/>  <!-- Kuvataideala --> 	
-		</xs:restriction>
-	</xs:simpleType>
-	
-	<xs:simpleType name="HankenumeroTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="100"/>
+			<xs:enumeration value="1"/>   	<!-- Humanistinen ja kasvatusala -->
+			<xs:enumeration value="2"/> 	<!-- Kulttuuriala -->
+			<xs:enumeration value="3"/> 	<!-- Yhteiskuntatieteiden, liiketalouden ja -->
+			<xs:enumeration value="4"/>   	<!-- Luonnontieteiden ala -->
+			<xs:enumeration value="5"/>    	<!-- Tekniikan ja liikenteen ala -->
+			<xs:enumeration value="6"/>    	<!-- Luonnonvara- ja ympäristöala -->
+			<xs:enumeration value="7"/>   	<!-- Sosiaali-, terveys- ja liikunta-ala -->
+			<xs:enumeration value="8"/>   	<!-- Matkailu-, ravitsemis- ja talousala -->		
+			<xs:enumeration value="75"/>  	<!-- Teologinen -->
+			<xs:enumeration value="76"/>  	<!-- Humanistinen -->
+			<xs:enumeration value="77"/>  	<!-- Taideteollinen -->
+			<xs:enumeration value="78"/>  	<!-- Musiikkiala -->
+			<xs:enumeration value="79"/>  	<!-- Teatteri- ja tanssiala -->
+			<xs:enumeration value="80"/>  	<!-- Kasvatustieteellinen -->
+			<xs:enumeration value="81"/>  	<!-- Liikuntatieteellinen -->
+			<xs:enumeration value="82"/>  	<!-- Yhteiskuntatieteellinen -->
+			<xs:enumeration value="83"/>  	<!-- Psykologia -->
+			<xs:enumeration value="84"/>  	<!-- Terveystieteet -->
+			<xs:enumeration value="85"/>  	<!-- Oikeustieteellinen -->
+			<xs:enumeration value="86"/>  	<!-- Kauppatieteellinen -->
+			<xs:enumeration value="87"/>  	<!-- Luonnontieteellinen -->
+			<xs:enumeration value="88"/>  	<!-- Maatalous metsätieteellinen -->
+			<xs:enumeration value="89"/>  	<!-- Teknillistieteellinen -->
+			<xs:enumeration value="90"/>  	<!-- Lääketieteellinen -->
+			<xs:enumeration value="91"/>  	<!-- Hammaslääketieteellinen -->
+			<xs:enumeration value="92"/>  	<!-- Eläinlääketieteellinen -->
+			<xs:enumeration value="93"/>  	<!-- Farmasia --> 
+			<xs:enumeration value="94"/>  	<!-- Kuvataideala --> 	
 		</xs:restriction>
 	</xs:simpleType>
 
     <xs:simpleType name="TaiteenalaKooditTyyppi">
 		<xs:restriction base="xs:integer"> 
-			<xs:enumeration value="1"/> <!-- 	Arkkitehtuuri -->
-			<xs:enumeration value="2"/> <!-- 	Elokuva -->
-			<xs:enumeration value="3"/> <!-- 	Esittävä taide -->
-			<xs:enumeration value="4"/> <!--	Kirjallisuus -->
-			<xs:enumeration value="5"/> <!-- 	Muotoilu -->
-			<xs:enumeration value="6"/> <!-- 	Musiikki -->
-			<xs:enumeration value="7"/> <!-- 	Nykytaide --> 
+			<xs:enumeration value="1"/>		<!-- Arkkitehtuuri -->
+			<xs:enumeration value="2"/> 	<!-- Elokuva -->
+			<xs:enumeration value="3"/> 	<!-- Esittävä taide -->
+			<xs:enumeration value="4"/> 	<!-- Kirjallisuus -->
+			<xs:enumeration value="5"/> 	<!-- Muotoilu -->
+			<xs:enumeration value="6"/> 	<!-- Musiikki -->
+			<xs:enumeration value="7"/> 	<!-- Nykytaide --> 
 		</xs:restriction>
 	</xs:simpleType>	
 	
@@ -1191,131 +1166,131 @@
 	
 	<xs:simpleType name="RooliKooditTyyppi">
 		<xs:restriction base="xs:integer">
-			<xs:enumeration value="110"/>   <!--  arkkitehti -->
-			<xs:enumeration value="111"/>   <!--  dramaturgi -->
-			<xs:enumeration value="112"/>   <!--  leikkaaja -->
-			<xs:enumeration value="113"/>   <!--  esiintyjä -->
-			<xs:enumeration value="114"/>   <!--  kapellimestari -->
-			<xs:enumeration value="115"/>   <!--  kehittäjä -->
-			<xs:enumeration value="116"/>   <!--  koreografi -->
-			<xs:enumeration value="117"/>   <!--  kuoronjohtaja -->
-			<xs:enumeration value="118"/>   <!--  kuraattori -->
-			<xs:enumeration value="119"/>   <!--  kuvaaja -->
-			<xs:enumeration value="120"/>   <!--  kuvataiteilija -->
-			<xs:enumeration value="121"/>   <!--  käsikirjoittaja -->
-			<xs:enumeration value="122"/>   <!--  lavastaja -->
-			<xs:enumeration value="123"/>   <!--  maisema-arkkitehti -->
-			<xs:enumeration value="124"/>   <!--  muotoilija -->
-			<xs:enumeration value="125"/>   <!--  näyttelijä -->
-			<xs:enumeration value="126"/>   <!--  ohjaaja -->
-			<xs:enumeration value="127"/>   <!--  pukusuunnittelija -->	
-			<xs:enumeration value="128"/>   <!--  sanoittaja -->
-			<xs:enumeration value="129"/>   <!--  sisustusarkkitehti -->
-			<xs:enumeration value="130"/>   <!--  solisti -->
-			<xs:enumeration value="131"/>   <!--  sovittaja -->
-			<xs:enumeration value="132"/>   <!--  säveltäjä -->
-			<xs:enumeration value="133"/>   <!--  taiteilija -->
-			<xs:enumeration value="134"/>   <!--  tanssija -->
-			<xs:enumeration value="135"/>   <!--  tekijä -->
-			<xs:enumeration value="136"/>   <!--  tuottaja -->
-			<xs:enumeration value="137"/>   <!--  valokuvaaja -->
-			<xs:enumeration value="138"/>   <!--  valosuunnittelija -->
-			<xs:enumeration value="139"/>   <!--  visualisoija -->	
-			<xs:enumeration value="140"/>   <!--  äänisuunnittelija -->
-			<xs:enumeration value="141"/>   <!--  videosuunnittelija -->
-			<xs:enumeration value="142"/>   <!--  valmentaja -->
-			<xs:enumeration value="143"/>   <!--  kääntäjä -->
-			<xs:enumeration value="144"/>   <!--  kuvittaja -->
-			<xs:enumeration value="145"/>   <!--  muusikko-->
-			<xs:enumeration value="146"/>   <!--  taiteellinen johtaja -->
+			<xs:enumeration value="110"/>   <!-- arkkitehti -->
+			<xs:enumeration value="111"/>   <!-- dramaturgi -->
+			<xs:enumeration value="112"/>   <!-- leikkaaja -->
+			<xs:enumeration value="113"/>   <!-- esiintyjä -->
+			<xs:enumeration value="114"/>   <!-- kapellimestari -->
+			<xs:enumeration value="115"/>   <!-- kehittäjä -->
+			<xs:enumeration value="116"/>   <!-- koreografi -->
+			<xs:enumeration value="117"/>   <!-- kuoronjohtaja -->
+			<xs:enumeration value="118"/>   <!-- kuraattori -->
+			<xs:enumeration value="119"/>   <!-- kuvaaja -->
+			<xs:enumeration value="120"/>   <!-- kuvataiteilija -->
+			<xs:enumeration value="121"/>   <!-- käsikirjoittaja -->
+			<xs:enumeration value="122"/>   <!-- lavastaja -->
+			<xs:enumeration value="123"/>   <!-- maisema-arkkitehti -->
+			<xs:enumeration value="124"/>   <!-- muotoilija -->
+			<xs:enumeration value="125"/>   <!-- näyttelijä -->
+			<xs:enumeration value="126"/>   <!-- ohjaaja -->
+			<xs:enumeration value="127"/>   <!-- pukusuunnittelija -->	
+			<xs:enumeration value="128"/>   <!-- sanoittaja -->
+			<xs:enumeration value="129"/>   <!-- sisustusarkkitehti -->
+			<xs:enumeration value="130"/>   <!-- solisti -->
+			<xs:enumeration value="131"/>   <!-- sovittaja -->
+			<xs:enumeration value="132"/>   <!-- säveltäjä -->
+			<xs:enumeration value="133"/>   <!-- taiteilija -->
+			<xs:enumeration value="134"/>   <!-- tanssija -->
+			<xs:enumeration value="135"/>   <!-- tekijä -->
+			<xs:enumeration value="136"/>   <!-- tuottaja -->
+			<xs:enumeration value="137"/>   <!-- valokuvaaja -->
+			<xs:enumeration value="138"/>   <!-- valosuunnittelija -->
+			<xs:enumeration value="139"/>   <!-- visualisoija -->	
+			<xs:enumeration value="140"/>   <!-- äänisuunnittelija -->
+			<xs:enumeration value="141"/>   <!-- videosuunnittelija -->
+			<xs:enumeration value="142"/>   <!-- valmentaja -->
+			<xs:enumeration value="143"/>   <!-- kääntäjä -->
+			<xs:enumeration value="144"/>   <!-- kuvittaja -->
+			<xs:enumeration value="145"/>   <!-- muusikko-->
+			<xs:enumeration value="146"/>   <!-- taiteellinen johtaja -->
 			<xs:enumeration value="147"/>   <!-- graafinen suunnittelija -->	
-			<xs:enumeration value="148"/>   <!--  animaattori -->
+			<xs:enumeration value="148"/>   <!-- animaattori -->
 		</xs:restriction>
 	</xs:simpleType>
 
 	<xs:simpleType name="LisatietoTaidealanTyyppiKategoriaTyyppi">
 		<xs:restriction base="xs:integer">
-			<xs:enumeration value="1"/>   <!-- arkkitehtuurikilpailuehdotus  -->
-			<xs:enumeration value="2"/>   <!-- dramatisointi -->
-			<xs:enumeration value="3"/>   <!-- esitys  -->
-			<xs:enumeration value="4"/>   <!-- esiintyminen julkaistussa taltioinnissa(levytys)  -->
-			<xs:enumeration value="5"/>   <!-- musiikkiteatteri  -->
-			<xs:enumeration value="6"/>   <!-- muu taiteellinen suoritus  -->
-			<xs:enumeration value="7"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ esitys / performance  -->
-			<xs:enumeration value="8"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ esitys / produktio  -->
-			<xs:enumeration value="9"/>   <!-- graafinen suunnitelma   -->
-			<xs:enumeration value="10"/>   <!-- kaunokirjallinen teos  -->
-			<xs:enumeration value="11"/>   <!-- kaupunkisuunnitelma  -->
-			<xs:enumeration value="12"/>   <!-- kiertue  -->
-			<xs:enumeration value="13"/>   <!-- konsepti  -->
-			<xs:enumeration value="14"/>   <!-- konsertti-->
-			<xs:enumeration value="15"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ  konsertti: kapellimestarina toimiminen  -->
-			<xs:enumeration value="16"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: kuoronjohtajana toimiminen  -->
-			<xs:enumeration value="17"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: kuvaile  -->
-			<xs:enumeration value="18"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: soolokonsertti (resitaali)  -->	
-			<xs:enumeration value="19"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: vaativa solistinen tehtävä (kuten orkesterin solisti)  -->
-			<xs:enumeration value="20"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: vaativa tehtävä yhtyeen tai vastaavan jäsenenä (yksi esittäjistä)  -->
-			<xs:enumeration value="21"/>   <!-- koreografia  -->
-			<xs:enumeration value="22"/>   <!-- kuunnelma  -->
-			<xs:enumeration value="23"/>   <!-- kuvakirja  -->
-			<xs:enumeration value="24"/>   <!-- kuvasuunnittelu  -->
-			<xs:enumeration value="25"/>   <!-- kuvaus  -->
-			<xs:enumeration value="26"/>   <!-- käsikirjoitus   -->
-			<xs:enumeration value="27"/>   <!-- käsikirjoitus   -->
-			<xs:enumeration value="28"/>   <!-- käännös  -->
-			<xs:enumeration value="29"/>   <!-- lavastus  -->
-			<xs:enumeration value="30"/>   <!-- leikkaus  -->
-			<xs:enumeration value="31"/>   <!-- libretto  -->
-			<xs:enumeration value="32"/>   <!-- maisemasuunnittelu  -->	
-			<xs:enumeration value="33"/>   <!-- mallisto  -->	
-			<xs:enumeration value="34"/>   <!-- mediatuotanto  -->	
-			<xs:enumeration value="35"/>   <!-- monitaiteinen kirjoittaminen  -->	
-			<xs:enumeration value="36"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ musiikillisen kokonaisuuden taiteellinen tuottaja  -->	
-			<xs:enumeration value="37"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ musiikkiteoksen sanoitus tai sanoituksen käännös  -->	
-			<xs:enumeration value="38"/>   <!-- muu julkinen teos  -->	
-			<xs:enumeration value="39"/>   <!-- näytelmä  -->	
-			<xs:enumeration value="40"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ näyttelijä / acting  -->	
-			<xs:enumeration value="41"/>   <!-- kuratointi  -->	
-			<xs:enumeration value="42"/>   <!-- näytös  -->		
-			<xs:enumeration value="43"/>   <!-- ohjaus -->	
-			<xs:enumeration value="44"/>   <!-- palvelumuotoilu -->
-			<xs:enumeration value="45"/>   <!-- peli  -->	
-			<xs:enumeration value="46"/>   <!-- performanssi -->
-			<xs:enumeration value="47"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ produktion taiteellinen johtaminen / tuottaminen -->	
-			<xs:enumeration value="48"/>   <!-- puvustus  -->
-			<xs:enumeration value="49"/>   <!-- arkkitehtuurisuunnitelma --> 	
-			<xs:enumeration value="50"/>   <!-- sanoitus -->
-			<xs:enumeration value="51"/>   <!-- sarjakuva -->	
-			<xs:enumeration value="52"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ screening -->
-			<xs:enumeration value="53"/>   <!-- sisustussuunnitelma -->	
-			<xs:enumeration value="54"/>   <!-- musiikin sovitus -->
-			<xs:enumeration value="55"/>   <!-- sävellys -->	
-			<xs:enumeration value="56"/>   <!-- taidekasvatusproduktio -->
-			<xs:enumeration value="57"/>   <!-- tanssiteos -->	
-			<xs:enumeration value="58"/>   <!-- tapahtuma-->
-			<xs:enumeration value="59"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ tarinateatteri -->	
-			<xs:enumeration value="60"/>   <!-- teoksen tai esityksen valmennus -->
-			<xs:enumeration value="61"/>   <!-- toteutettu kaupunkitila -->	
-			<xs:enumeration value="62"/>   <!-- HUOM. POISTUNUT KÄYTÖSTÄ toteutettu maisema -->
-			<xs:enumeration value="63"/>   <!-- toteutettu rakennus -->	
-			<xs:enumeration value="64"/>   <!-- tuotanto  -->
-			<xs:enumeration value="65"/>   <!-- tuotesuunnitelma  -->	
-			<xs:enumeration value="66"/>   <!-- valosuunnittelu -->
-			<xs:enumeration value="67"/>   <!-- mediataide -->	
-			<xs:enumeration value="68"/>   <!-- visualisointi -->
-			<xs:enumeration value="69"/>   <!-- yhteiskunnallinen taideprojekti  -->	
-			<xs:enumeration value="70"/>   <!-- yhteisnäyttely -->
-			<xs:enumeration value="71"/>   <!-- yhteisötaiteellinen projekti -->	
-			<xs:enumeration value="72"/>   <!-- yksityisnäyttely -->
-			<xs:enumeration value="73"/>   <!-- ympäristötaide -->	
-			<xs:enumeration value="74"/>   <!-- äänikirja -->
-			<xs:enumeration value="75"/>   <!-- äänisuunnittelu -->	
-			<xs:enumeration value="77"/>   <!-- nukketeatteriesitys -->
-			<xs:enumeration value="77"/>   <!-- näyttelyarkkitehtuuri -->	
-			<xs:enumeration value="78"/>   <!-- oopperateos -->
-			<xs:enumeration value="79"/>   <!-- sirkusesitys -->	
-			<xs:enumeration value="80"/>   <!-- videosuunnittelu -->
-			<xs:enumeration value="81"/>   <!-- elokuva -->
+			<xs:enumeration value="1"/>   	<!-- arkkitehtuurikilpailuehdotus -->
+			<xs:enumeration value="2"/>   	<!-- dramatisointi -->
+			<xs:enumeration value="3"/>   	<!-- esitys -->
+			<xs:enumeration value="4"/>   	<!-- esiintyminen julkaistussa taltioinnissa(levytys) -->
+			<xs:enumeration value="5"/>   	<!-- musiikkiteatteri -->
+			<xs:enumeration value="6"/>   	<!-- muu taiteellinen suoritus -->
+			<xs:enumeration value="7"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ esitys / performance -->
+			<xs:enumeration value="8"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ esitys / produktio -->
+			<xs:enumeration value="9"/>  	<!-- graafinen suunnitelma -->
+			<xs:enumeration value="10"/>   	<!-- kaunokirjallinen teos -->
+			<xs:enumeration value="11"/>   	<!-- kaupunkisuunnitelma -->
+			<xs:enumeration value="12"/>   	<!-- kiertue -->
+			<xs:enumeration value="13"/>   	<!-- konsepti -->
+			<xs:enumeration value="14"/>   	<!-- konsertti -->
+			<xs:enumeration value="15"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ  konsertti: kapellimestarina toimiminen -->
+			<xs:enumeration value="16"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: kuoronjohtajana toimiminen -->
+			<xs:enumeration value="17"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: kuvaile -->
+			<xs:enumeration value="18"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: soolokonsertti (resitaali) -->	
+			<xs:enumeration value="19"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: vaativa solistinen tehtävä (kuten orkesterin solisti) -->
+			<xs:enumeration value="20"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ konsertti: vaativa tehtävä yhtyeen tai vastaavan jäsenenä (yksi esittäjistä) -->
+			<xs:enumeration value="21"/>   	<!-- koreografia -->
+			<xs:enumeration value="22"/>   	<!-- kuunnelma -->
+			<xs:enumeration value="23"/>   	<!-- kuvakirja -->
+			<xs:enumeration value="24"/>   	<!-- kuvasuunnittelu -->
+			<xs:enumeration value="25"/>   	<!-- kuvaus -->
+			<xs:enumeration value="26"/>   	<!-- käsikirjoitus -->
+			<xs:enumeration value="27"/>   	<!-- käsikirjoitus -->
+			<xs:enumeration value="28"/>   	<!-- käännös -->
+			<xs:enumeration value="29"/>   	<!-- lavastus -->
+			<xs:enumeration value="30"/>   	<!-- leikkaus -->
+			<xs:enumeration value="31"/>   	<!-- libretto -->
+			<xs:enumeration value="32"/>   	<!-- maisemasuunnittelu -->	
+			<xs:enumeration value="33"/>   	<!-- mallisto -->	
+			<xs:enumeration value="34"/>   	<!-- mediatuotanto -->	
+			<xs:enumeration value="35"/>   	<!-- monitaiteinen kirjoittaminen -->	
+			<xs:enumeration value="36"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ musiikillisen kokonaisuuden taiteellinen tuottaja -->	
+			<xs:enumeration value="37"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ musiikkiteoksen sanoitus tai sanoituksen käännös -->	
+			<xs:enumeration value="38"/>   	<!-- muu julkinen teos -->	
+			<xs:enumeration value="39"/>   	<!-- näytelmä -->	
+			<xs:enumeration value="40"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ näyttelijä / acting -->	
+			<xs:enumeration value="41"/>   	<!-- kuratointi -->	
+			<xs:enumeration value="42"/>   	<!-- näytös -->		
+			<xs:enumeration value="43"/>   	<!-- ohjaus -->	
+			<xs:enumeration value="44"/>   	<!-- palvelumuotoilu -->
+			<xs:enumeration value="45"/>   	<!-- peli -->	
+			<xs:enumeration value="46"/>   	<!-- performanssi -->
+			<xs:enumeration value="47"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ produktion taiteellinen johtaminen / tuottaminen -->	
+			<xs:enumeration value="48"/>   	<!-- puvustus -->
+			<xs:enumeration value="49"/>   	<!-- arkkitehtuurisuunnitelma --> 	
+			<xs:enumeration value="50"/>   	<!-- sanoitus -->
+			<xs:enumeration value="51"/>   	<!-- sarjakuva -->	
+			<xs:enumeration value="52"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ screening -->
+			<xs:enumeration value="53"/>   	<!-- sisustussuunnitelma -->	
+			<xs:enumeration value="54"/>   	<!-- musiikin sovitus -->
+			<xs:enumeration value="55"/>   	<!-- sävellys -->	
+			<xs:enumeration value="56"/>   	<!-- taidekasvatusproduktio -->
+			<xs:enumeration value="57"/>   	<!-- tanssiteos -->	
+			<xs:enumeration value="58"/>   	<!-- tapahtuma -->
+			<xs:enumeration value="59"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ tarinateatteri -->	
+			<xs:enumeration value="60"/>   	<!-- teoksen tai esityksen valmennus -->
+			<xs:enumeration value="61"/>   	<!-- toteutettu kaupunkitila -->	
+			<xs:enumeration value="62"/>   	<!-- HUOM. POISTUNUT KÄYTÖSTÄ toteutettu maisema -->
+			<xs:enumeration value="63"/>   	<!-- toteutettu rakennus -->	
+			<xs:enumeration value="64"/>   	<!-- tuotanto -->
+			<xs:enumeration value="65"/>   	<!-- tuotesuunnitelma -->	
+			<xs:enumeration value="66"/>   	<!-- valosuunnittelu -->
+			<xs:enumeration value="67"/>   	<!-- mediataide -->	
+			<xs:enumeration value="68"/>   	<!-- visualisointi -->
+			<xs:enumeration value="69"/>   	<!-- yhteiskunnallinen taideprojekti -->	
+			<xs:enumeration value="70"/>   	<!-- yhteisnäyttely -->
+			<xs:enumeration value="71"/>   	<!-- yhteisötaiteellinen projekti -->	
+			<xs:enumeration value="72"/>   	<!-- yksityisnäyttely -->
+			<xs:enumeration value="73"/>   	<!-- ympäristötaide -->	
+			<xs:enumeration value="74"/>   	<!-- äänikirja -->
+			<xs:enumeration value="75"/>   	<!-- äänisuunnittelu -->	
+			<xs:enumeration value="77"/>   	<!-- nukketeatteriesitys -->
+			<xs:enumeration value="77"/>   	<!-- näyttelyarkkitehtuuri -->	
+			<xs:enumeration value="78"/>   	<!-- oopperateos -->
+			<xs:enumeration value="79"/>   	<!-- sirkusesitys -->	
+			<xs:enumeration value="80"/>   	<!-- videosuunnittelu -->
+			<xs:enumeration value="81"/>   	<!-- elokuva -->
 		</xs:restriction>
 	</xs:simpleType>	
 
@@ -1582,29 +1557,6 @@
 		</xs:restriction>
 	</xs:simpleType>
 	
-    <xs:simpleType name="TunnisteTekstiTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="1000"/>
-			<!-- <xs:pattern value="([0-9])*-([0-9])*|([0-9])*"/> -->
-		</xs:restriction>
-	</xs:simpleType>
-	
-	<xs:simpleType name="InfrastruktuuriOrganisaatioTunnusTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Infrastruktuuria koordinoivan organisaation tunnus 	
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:maxLength value="100"/>
-		</xs:restriction>
-	</xs:simpleType>	
-	
 	<xs:simpleType name="JulkaisuKanavaOATyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
@@ -1635,7 +1587,138 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="4000"/>
-			<!-- <xs:pattern value="([0-9])*-([0-9])*|([0-9])*"/> -->
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="RahoituspaatosIDTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaa tekstikenttä
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="RahoittajaIDTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaa tekstikenttä
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="RahoittajanNimiTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaamuotoinen tekstikenttä, joka saa olla korkeintaan 500 merkkiä pitkä.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="500"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="HankeIDTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaa tekstikenttä
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="IDTyyppiRahoituspaatosHanke">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Pysyvä tunniste
+				http://uri.suomi.fi/codelist/research/PID
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+			<xs:enumeration value="ADSbibcode"/>
+			<xs:enumeration value="ARK"/>
+			<xs:enumeration value="arXiv"/>
+			<xs:enumeration value="BusinessID"/>
+			<xs:enumeration value="Crossref_funders"/>
+			<xs:enumeration value="DOI"/>
+			<xs:enumeration value="EAN13"/>
+			<xs:enumeration value="GRID"/>
+			<xs:enumeration value="Handle"/>
+			<xs:enumeration value="ISBN"/>
+			<xs:enumeration value="eISBN"/>
+			<xs:enumeration value="ISNI"/>
+			<xs:enumeration value="ISSN"/>
+			<xs:enumeration value="eISSN"/>
+			<xs:enumeration value="ISTC"/>
+			<xs:enumeration value="FunderLocalID"/>
+			<xs:enumeration value="LSID"/>
+			<xs:enumeration value="Orcid"/>
+			<xs:enumeration value="PIC"/>
+			<xs:enumeration value="PMID"/>
+			<xs:enumeration value="PURL"/>
+			<xs:enumeration value="QID"/>
+			<xs:enumeration value="RAID"/>
+			<xs:enumeration value="ROR"/>
+			<xs:enumeration value="ScopusAuthorID"/>
+			<xs:enumeration value="UPC"/>
+			<xs:enumeration value="URI"/>
+			<xs:enumeration value="URL"/>
+			<xs:enumeration value="URN"/>
+			<xs:enumeration value="VAT-number"/>
+			<xs:enumeration value="Virta-id"/>
+			<xs:enumeration value="JuFo-id"/>
+			<xs:enumeration value="SF-edu-ID"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="InfrastruktuuriIDTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaa tekstikenttä
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="AineistoIDTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Vapaa tekstikenttä
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="300"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="IDTyyppiInfrastruktuuriAineisto">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Pysyvä tunniste
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="20"/>
+			<xs:enumeration value="DOI"/>
+			<xs:enumeration value="URI"/>
+			<xs:enumeration value="URN"/>
+			<xs:enumeration value="Handle"/>
 		</xs:restriction>
 	</xs:simpleType>
 	

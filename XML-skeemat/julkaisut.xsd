@@ -29,7 +29,7 @@
 							
 							<xs:element name="OrgSektoriKoodi" type="julkaisut:OrgSektoriKoodiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Organisaation luokittelu </xs:documentation>
+									<xs:documentation xml:lang="fi">Organisaation luokittelu</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -99,7 +99,7 @@
 							
 							<xs:element name="TekijoidenLkm" type="julkaisut:TekijoidenLkmTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Julkaisun tekijöiden kokonaislukumäärä. Jos ylittää 50, riittää mer-kintä ”50”. </xs:documentation>
+									<xs:documentation xml:lang="fi">Julkaisun tekijöiden kokonaislukumäärä. Jos ylittää 50, riittää mer-kintä ”50”.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -159,13 +159,13 @@
 							
 							<xs:element name="JulkaisumaaKoodi" type="julkaisut:JulkaisumaaKoodiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Lehden, sarjan, monografian tai emojulkaisun julkaisumaa </xs:documentation>
+									<xs:documentation xml:lang="fi">Lehden, sarjan, monografian tai emojulkaisun julkaisumaa</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
 							<xs:element name="LehdenNimi" type="julkaisut:LehdenNimiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Lehden/sarjan nimi mahdollisimman täydellisenä ja kokonaan auki kirjoitettuna (ei lyhenteitä). </xs:documentation>
+									<xs:documentation xml:lang="fi">Lehden/sarjan nimi mahdollisimman täydellisenä ja kokonaan auki kirjoitettuna (ei lyhenteitä).</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -269,13 +269,13 @@
 							
 							<xs:element name="TaidetyyppiKoodi" type="julkaisut:TaidetyyppiKoodiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Tieto, onko kyseessä taiteellinen julkaisu . </xs:documentation>
+									<xs:documentation xml:lang="fi">Tieto, onko kyseessä taiteellinen julkaisu.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
 							<xs:element name="AVSovellusTyyppikoodi" type="julkaisut:AVSovellusTyyppikoodiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Tieto, onko kyseessä Audiovisuaalinen julkaisu . </xs:documentation>
+									<xs:documentation xml:lang="fi">Tieto, onko kyseessä Audiovisuaalinen julkaisu.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -340,7 +340,7 @@
 							
 							<xs:element name="YhteisjulkaisuKVKytkin" type="julkaisut:KyllaEiTyyppi"  minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Tekijöistä vähintään yksi on affilioitunut muuhun kuin suomalaisen organisaatioon (myös jos tekijällä on affiliaatio sekä suomalainen että ulkomaalaiseen organisaatioon). </xs:documentation>
+									<xs:documentation xml:lang="fi">Tekijöistä vähintään yksi on affilioitunut muuhun kuin suomalaisen organisaatioon (myös jos tekijällä on affiliaatio sekä suomalainen että ulkomaalaiseen organisaatioon).</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="YhteisjulkaisuSHPKytkin" type="julkaisut:KyllaEiTyyppi"  minOccurs="0" maxOccurs="1" nillable="true">
@@ -381,7 +381,7 @@
 							
 							<xs:element name="AvoinSaatavuusKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Julkaisun tämänhetkinen OA-status kustantajan palvelussa. </xs:documentation>
+									<xs:documentation xml:lang="fi">Julkaisun tämänhetkinen OA-status kustantajan palvelussa.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -393,7 +393,7 @@
 							
 							<xs:element name="LisenssiKoodi" type="julkaisut:LisenssiKoodiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Kustantajan palvelussa sijaitsevan julkaisun lisenssi. </xs:documentation>
+									<xs:documentation xml:lang="fi">Kustantajan palvelussa sijaitsevan julkaisun lisenssi.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -449,17 +449,17 @@
 
 										<xs:element name="RinnakkaistallennusVersioKoodi"  type="julkaisut:RinnakkaistallennusVersioKoodiTyyppi" minOccurs="0" maxOccurs="1">
 											<xs:annotation>
-												<xs:documentation xml:lang="fi">Rinnakkaistallennetun julkaisun versio. </xs:documentation>
+												<xs:documentation xml:lang="fi">Rinnakkaistallennetun julkaisun versio.</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="RinnakkaistallennusLisenssiKoodi" type="julkaisut:RinnakkaistallennusLisenssiKoodiTyyppi" minOccurs="0" maxOccurs="1">
 											<xs:annotation>
-												<xs:documentation xml:lang="fi">Rinnakkaistallennetun julkaisun lisenssi. </xs:documentation>
+												<xs:documentation xml:lang="fi">Rinnakkaistallennetun julkaisun lisenssi.</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 										<xs:element name="RinnakkaistallennusEmbargoPvm" type="julkaisut:PvmTyyppi" minOccurs="0" maxOccurs="1">
 											<xs:annotation>
-												<xs:documentation xml:lang="fi">Päivämäärä, jolloin rinnakkaistallennetun julkaisun embargoaika raukeaa. </xs:documentation>
+												<xs:documentation xml:lang="fi">Päivämäärä, jolloin rinnakkaistallennetun julkaisun embargoaika raukeaa.</xs:documentation>
 											</xs:annotation>
 										</xs:element>
 	
@@ -473,7 +473,7 @@
 							
 							<xs:element name="PreprintKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Julkaisusta on saatavilla preprint versio organisaatio-tai tieteenalakohtaisessa julkaisuarkistossa. </xs:documentation>
+									<xs:documentation xml:lang="fi">Julkaisusta on saatavilla preprint versio organisaatio-tai tieteenalakohtaisessa julkaisuarkistossa.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							<xs:element name="Preprinttallennetut"  minOccurs="0" maxOccurs="1">
@@ -484,12 +484,12 @@
 												<xs:sequence>
 													<xs:element name="PreprintLisenssiKoodi" type="julkaisut:PreprintLisenssiKoodiTyyppi" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Preprint julkaisun lisenssi. </xs:documentation>
+															<xs:documentation xml:lang="fi">Preprint julkaisun lisenssi.</xs:documentation>
 														</xs:annotation>
 													</xs:element>
 													<xs:element name="PreprintOsoiteTeksti" type="julkaisut:PysyvaOsoiteTekstiTyyppi" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Organisaatio- tai tieteenalakohtaisen julkaisuarkiston preprint version verkko-osoite (esim. URN). </xs:documentation>
+															<xs:documentation xml:lang="fi">Organisaatio- tai tieteenalakohtaisen julkaisuarkiston preprint version verkko-osoite (esim. URN).</xs:documentation>
 														</xs:annotation>
 													</xs:element>								
 												</xs:sequence>
@@ -521,7 +521,7 @@
 							
 							<xs:element name="LahdetietokannanTunnus" type="julkaisut:LahdetietokannanTunnusTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Julkaisun tunniste tai ID-numero tietokannassa, josta sen tietue on haravoitu </xs:documentation>
+									<xs:documentation xml:lang="fi">Julkaisun tunniste tai ID-numero tietokannassa, josta sen tietue on haravoitu</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -557,14 +557,84 @@
 								</xs:complexType>
 							</xs:element>
 							
+							<xs:element name="VuosiEarlyAccess" type="julkaisut:VuosiTyyppi" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="fi">Early access vuosi</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							
+							<xs:element name="Rahoituspaatokset" minOccurs="0" maxOccurs="1">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="Rahoituspaatos" minOccurs="0" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:sequence>
+													<xs:element name="RahoituspaatosID" minOccurs="0" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Rahoituspäätöksen tunniste</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:RahoituspaatosIDTyyppi">
+																	<xs:attribute name="IDTyyppi" type="julkaisut:IDTyyppiRahoituspaatosHanke" use="required">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="fi">Rahoituspäätöksen tunnisteen tyyppi</xs:documentation>
+																		</xs:annotation>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="RahoittajaID" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Rahoittajan tunniste</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:RahoittajaIDTyyppi">
+																	<xs:attribute name="IDTyyppi" type="julkaisut:IDTyyppiRahoituspaatosHanke" use="required">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="fi">Rahoittajan tunnisteen tyyppi</xs:documentation>
+																		</xs:annotation>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="RahoittajanNimi" type="julkaisut:RahoittajanNimiTyyppi" minOccurs="0" maxOccurs="unbounded">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Rahoittajan nimi</xs:documentation>
+														</xs:annotation>
+													</xs:element>
+												</xs:sequence>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							
 							<xs:element name="Hankkeet" minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
 										<xs:element name="Hanke" minOccurs="0" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
-													<xs:element name="HankenumeroTeksti" type="julkaisut:HankenumeroTyyppi" minOccurs="0" maxOccurs="1"/>
-													<xs:element name="RahoittajaOrgTunnus" type="julkaisut:RahoittajaOrganisaatioTunnusTyyppi" minOccurs="0" maxOccurs="1"/>
+													<xs:element name="HankeID" minOccurs="1" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Hankkeen tunniste</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:HankeIDTyyppi">
+																	<xs:attribute name="IDTyyppi" type="julkaisut:IDTyyppiRahoituspaatosHanke" use="required">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="fi">Hankkeen tunnisteen tyyppi</xs:documentation>
+																		</xs:annotation>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>	
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
@@ -578,9 +648,22 @@
 										<xs:element name="Infrastruktuuri" minOccurs="0" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
-													<xs:element name="TunnisteTeksti" type="julkaisut:TunnisteTekstiTyyppi" minOccurs="1" maxOccurs="1"/>
-													<xs:element name="LahdetietokannanTunnus" type="julkaisut:LahdetietokannanTunnusTyyppi" minOccurs="1" maxOccurs="1"/>
-													<xs:element name="InfrastruktuuriOrgTunnus" type="julkaisut:InfrastruktuuriOrganisaatioTunnusTyyppi" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="InfrastruktuuriID" minOccurs="1" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Infrastruktuurin tunniste</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:InfrastruktuuriIDTyyppi">
+																	<xs:attribute name="IDTyyppi" type="julkaisut:IDTyyppiInfrastruktuuriAineisto" use="required">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="fi">Infrastruktuurin tunnisteen tyyppi</xs:documentation>
+																		</xs:annotation>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>	
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
@@ -594,15 +677,28 @@
 										<xs:element name="Aineisto" minOccurs="0" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
-													<xs:element name="TunnisteTeksti" type="julkaisut:TunnisteTekstiTyyppi" minOccurs="1" maxOccurs="1"/>
-													<xs:element name="LahdetietokannanTunnus" type="julkaisut:LahdetietokannanTunnusTyyppi" minOccurs="1" maxOccurs="1"/>
-													<xs:element name="DOI" type="julkaisut:DOITyyppi" minOccurs="1" maxOccurs="1"/>
+													<xs:element name="AineistoID" minOccurs="1" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Aineiston tunniste</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:AineistoIDTyyppi">
+																	<xs:attribute name="IDTyyppi" type="julkaisut:IDTyyppiInfrastruktuuriAineisto" use="required">
+																		<xs:annotation>
+																			<xs:documentation xml:lang="fi">Aineiston tunnisteen tyyppi</xs:documentation>
+																		</xs:annotation>
+																	</xs:attribute>
+																</xs:extension>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>	
 												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
-							</xs:element>	
+							</xs:element>
 							
 							<xs:element name="TaidealanTyyppiKategoria" type="julkaisut:LisatietoTaidealanTyyppiKategoriaTyyppi" minOccurs="0" maxOccurs="unbounded">
 								<xs:annotation>
