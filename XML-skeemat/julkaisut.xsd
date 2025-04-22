@@ -231,13 +231,13 @@
 								</xs:annotation>
 							</xs:element>	
 							
-							<xs:element name="YleisoKoodi" type="julkaisut:YleisoKoodiTyyppi" minOccurs="0" maxOccurs="1">
+							<xs:element name="YleisoKoodi" type="julkaisut:YleisoKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Julkaisukanavan kohdeyleisön perusteella julkaisulle määritellään YleisöKoodi. Hyödynnetään nykyisiä tiedonkeruukäsikirjan määrittelyitä, jotka yhteneväisiä myös Julkaisufoorumin määrittelyn kanssa</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="EmojulkaisuntyyppiKoodi" type="julkaisut:EmojulkaisuntyyppiKoodiTyyppi" minOccurs="0" maxOccurs="1">
+							<xs:element name="EmojulkaisuntyyppiKoodi" type="julkaisut:EmojulkaisuntyyppiKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Määritellään julkaisun alusta ja hyödynnetään mahdollisuuksien mukaan tiedonkeruukäsikirjan määritelmiä. Lehti sisältää tieteelliset aikakauslehdet, ammattilehdet. Kokoomateos sisältää tieteelliset kokoomateokset, tieteelliset vuosikirjat ja vastaavat, ammatilliset käsi- tai opaskirjat, ammatilliset tietojärjestelmät tai kokoomateokset, oppikirja-aineistot, lyhyet ensyklopediatekstit. Konferenssialusta sisältää konferenssin painetut tai julkisesti saatavilla olevat julkaisut, ns. proceedings julkaisut.</xs:documentation>
 								</xs:annotation>
@@ -261,7 +261,7 @@
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="OpinnayteKoodi" type="julkaisut:OpinnayteKoodiTyyppi" minOccurs="0" maxOccurs="1">
+							<xs:element name="OpinnayteKoodi" type="julkaisut:OpinnayteKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Tieto, onko julkaisu opinnäytetyö. Hyödynnetään tiedonkeruukäsikirjan määritelmiä. Monografiaväitöskirja sisältää yliopiston sarjoissa ja yliopiston laitossarjoissa julkaistut monografiaväitöskirjat, kustannetut monografiaväitöskirjat tai omakustanteena julkaistut monografiaväitöskirjat. Kokoomaväitöskirja sisältää artikkeliväitöskirjat, vaikka artikkelit olisi jo ilmoitettu omina julkaisuinaan.</xs:documentation>
 								</xs:annotation>
@@ -702,7 +702,7 @@
 							
 							<xs:element name="TaidealanTyyppiKategoria" type="julkaisut:LisatietoTaidealanTyyppiKategoriaTyyppi" minOccurs="0" maxOccurs="unbounded">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">Koodiston mukainen taidealan tyyppikategoria</xs:documentation>
+									<xs:documentation xml:lang="fi">Koodiston mukainen taidealan tyyppikategoria.</xs:documentation>
 								</xs:annotation>
 							</xs:element>							
 	
@@ -730,7 +730,7 @@
 									<xs:sequence>
 										<xs:element name="JulkaisunTunnus" type="julkaisut:JulkaisunTunnusTyyppi" minOccurs="0" maxOccurs="unbounded">
 										<xs:annotation>
-											<xs:documentation xml:lang="fi">Julkaisun yksilöivä tunniste</xs:documentation>
+											<xs:documentation xml:lang="fi">Julkaisun yksilöivä tunniste.</xs:documentation>
 										</xs:annotation>
 										</xs:element>
 									</xs:sequence>

@@ -997,11 +997,12 @@
 	<xs:simpleType name="KyllaEiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
+				Vapaa tekstikenttä, tyhjä sallittu
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/>
 			<xs:enumeration value="0"/>
 			<xs:enumeration value="1"/>
 		</xs:restriction>
@@ -1353,6 +1354,7 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 			    Koodiarvot:
+			    tyhjä
                 0 = tieteellinen
                 1 = ammatillinen
                 2 = yleistajuinen
@@ -1360,6 +1362,7 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/>
 			<xs:enumeration value="0"/>
 			<xs:enumeration value="1"/>
 			<xs:enumeration value="2"/>
@@ -1370,6 +1373,7 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 			    Koodiarvot:
+			    tyhjä
                 0 = lehti
                 1 = kokoomateos
                 2 = konferenssialusta
@@ -1378,6 +1382,7 @@
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/>
 			<xs:enumeration value="0"/>
 			<xs:enumeration value="1"/>
 			<xs:enumeration value="2"/>
@@ -1408,12 +1413,14 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 			    Koodiarvot:
+			    tyhjä
                 0 = monografiaväitöskirja
                 1 = kokoomaväitöskirja
 		    </xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
 			<xs:maxLength value="1"/>
+			<xs:enumeration value=""/>
 			<xs:enumeration value="0"/>
 			<xs:enumeration value="1"/>
 		</xs:restriction>
