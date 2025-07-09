@@ -115,18 +115,43 @@
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="Avainsanat"  minOccurs="0" maxOccurs="1">
+							<xs:element name="Avainsanat">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="AvainsanaTeksti" minOccurs="0" maxOccurs="unbounded">
-											<xs:annotation>
-												<xs:documentation xml:lang="fi">Artikkelin avainsanat</xs:documentation>
-											</xs:annotation>
+										<xs:element name="Avainsana" minOccurs="0" maxOccurs="unbounded">
 											<xs:complexType>
-												<xs:simpleContent>
-													<xs:extension base="julkaisut:AvainsanaTekstiTyyppi">
-													</xs:extension>
-												</xs:simpleContent>
+												<xs:sequence>
+													<xs:element name="AvainsanaTeksti" minOccurs="1" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Artikkelin avainsanat</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:AvainsanaTekstiTyyppi"/>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="AvainsanaUri" minOccurs="0" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Avainsana uri</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:AvainsanaUriTyyppi"/>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+													<xs:element name="AvainsanaOntologia" minOccurs="0" maxOccurs="1">
+														<xs:annotation>
+															<xs:documentation xml:lang="fi">Artikkelin avainsanojen ontologia</xs:documentation>
+														</xs:annotation>
+														<xs:complexType>
+															<xs:simpleContent>
+																<xs:extension base="julkaisut:AvainsanaOntologiaTyyppi"/>
+															</xs:simpleContent>
+														</xs:complexType>
+													</xs:element>
+												</xs:sequence>
 											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
