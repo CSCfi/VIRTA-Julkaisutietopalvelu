@@ -123,7 +123,7 @@
 												<xs:sequence>
 													<xs:element name="AvainsanaTeksti" minOccurs="1" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Artikkelin avainsanat</xs:documentation>
+															<xs:documentation xml:lang="fi">Artikkelin avainsana</xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:simpleContent>
@@ -133,7 +133,7 @@
 													</xs:element>
 													<xs:element name="AvainsanaUri" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Avainsana uri</xs:documentation>
+															<xs:documentation xml:lang="fi">Avainsanan URI</xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:simpleContent>
@@ -143,7 +143,7 @@
 													</xs:element>
 													<xs:element name="AvainsanaOntologia" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Artikkelin avainsanojen ontologia</xs:documentation>
+															<xs:documentation xml:lang="fi">Avainsanan ontologia</xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:simpleContent>
