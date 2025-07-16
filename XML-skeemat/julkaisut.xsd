@@ -143,7 +143,7 @@
 													</xs:element>
 													<xs:element name="AvainsanaOntologia" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
-															<xs:documentation xml:lang="fi">Avainsanan ontologia</xs:documentation>
+															<xs:documentation xml:lang="fi">Avainsanan ontologian lyhenne</xs:documentation>
 														</xs:annotation>
 														<xs:complexType>
 															<xs:simpleContent>
