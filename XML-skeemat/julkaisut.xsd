@@ -87,7 +87,7 @@
 							
 							<xs:element name="BibliografinenVuosi" type="julkaisut:VuosiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
-									<xs:documentation xml:lang="fi">...</xs:documentation>
+									<xs:documentation xml:lang="fi">Julkaisun viitetietoihin merkittävä vuosi (esim. painetun kokooomateoksen julkaisuvuosi, kun artikkeli on julkaistu sähköisesti ennen emoteoksen julkaisua). Voi olla myös sama kuin raportoitu julkaisuvuosi.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
