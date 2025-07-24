@@ -264,6 +264,34 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="AvainsanaUriTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				AvainsanaUri on vapaamuotoinen tekstikenttä.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="AvainsanaOntologiaTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				AvainsanaOntologia on vapaamuotoinen tekstikenttä.
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:minLength value="1"/>
+			<xs:maxLength value="100"/>
+		</xs:restriction>
+	</xs:simpleType> 
 			<xs:maxLength value="100"/>
 		</xs:restriction>
 	</xs:simpleType>
