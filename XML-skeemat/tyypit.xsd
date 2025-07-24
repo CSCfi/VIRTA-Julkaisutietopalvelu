@@ -260,38 +260,13 @@
 	<xs:simpleType name="AvainsanaTekstiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
+				Vapaa tekstikenttä, artikkelin avainsanat.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
 			<xs:maxLength value="100"/>
 		</xs:restriction>
 	</xs:simpleType>
-	
-	<xs:simpleType name="AvainsanaUriTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="100"/>
-		</xs:restriction>
-	</xs:simpleType>
-
-	<xs:simpleType name="AvainsanaOntologiaTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
-			<xs:maxLength value="100"/>
-		</xs:restriction>
-	</xs:simpleType> 
 		
 	<xs:simpleType name="JufoTunnusTyyppi">
 		<xs:annotation>
