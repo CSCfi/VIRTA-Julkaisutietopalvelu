@@ -292,9 +292,6 @@
 			<xs:maxLength value="100"/>
 		</xs:restriction>
 	</xs:simpleType> 
-			<xs:maxLength value="100"/>
-		</xs:restriction>
-	</xs:simpleType>
 		
 	<xs:simpleType name="JufoTunnusTyyppi">
 		<xs:annotation>
