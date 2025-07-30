@@ -606,12 +606,6 @@
 								</xs:complexType>
 							</xs:element>
 							
-							<xs:element name="VuosiEarlyAccess" type="julkaisut:VuosiTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Early access vuosi</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
 							<xs:element name="Rahoituspaatokset" minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
