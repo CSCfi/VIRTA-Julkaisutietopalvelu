@@ -127,35 +127,20 @@
 										<xs:element name="Avainsana" minOccurs="1" maxOccurs="unbounded">
 											<xs:complexType>
 												<xs:sequence>
-													<xs:element name="AvainsanaTeksti" minOccurs="1" maxOccurs="1">
+													<xs:element name="AvainsanaTeksti" type="julkaisut:AvainsanaTekstiTyyppi" minOccurs="1" maxOccurs="1">
 														<xs:annotation>
 															<xs:documentation xml:lang="fi">Artikkelin avainsana</xs:documentation>
 														</xs:annotation>
-														<xs:complexType>
-															<xs:simpleContent>
-																<xs:extension base="julkaisut:AvainsanaTekstiTyyppi"/>
-															</xs:simpleContent>
-														</xs:complexType>
 													</xs:element>
-													<xs:element name="AvainsanaUri" minOccurs="0" maxOccurs="1">
+													<xs:element name="AvainsanaUri" type="julkaisut:AvainsanaUriTyyppi" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
 															<xs:documentation xml:lang="fi">Avainsanan URI</xs:documentation>
 														</xs:annotation>
-														<xs:complexType>
-															<xs:simpleContent>
-																<xs:extension base="julkaisut:AvainsanaUriTyyppi"/>
-															</xs:simpleContent>
-														</xs:complexType>
 													</xs:element>
-													<xs:element name="AvainsanaOntologia" minOccurs="0" maxOccurs="1">
+													<xs:element name="AvainsanaOntologia" type="julkaisut:AvainsanaOntologiaTyyppi" minOccurs="0" maxOccurs="1">
 														<xs:annotation>
 															<xs:documentation xml:lang="fi">Avainsanan ontologian lyhenne</xs:documentation>
 														</xs:annotation>
-														<xs:complexType>
-															<xs:simpleContent>
-																<xs:extension base="julkaisut:AvainsanaOntologiaTyyppi"/>
-															</xs:simpleContent>
-														</xs:complexType>
 													</xs:element>
 												</xs:sequence>
 											</xs:complexType>
@@ -163,7 +148,7 @@
 									</xs:sequence>
 								</xs:complexType>
 							</xs:element>
-							
+
 							<xs:element name="Tiivistelmat" minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>

@@ -1694,7 +1694,7 @@
 			<xs:enumeration value="ISSN"/>
 			<xs:enumeration value="eISSN"/>
 			<xs:enumeration value="ISTC"/>
-			<xs:enumeration value="FunderLocalID"/>
+			<xs:enumeration value="LocalID"/>
 			<xs:enumeration value="LSID"/>
 			<xs:enumeration value="Orcid"/>
 			<xs:enumeration value="PIC"/>
