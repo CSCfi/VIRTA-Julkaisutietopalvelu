@@ -1674,7 +1674,7 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 				Pysyvä tunniste
-				http://uri.suomi.fi/codelist/research/PID
+				http://uri.suomi.fi/codelist/research/PID, lisätty paikallinen tunniste (LocalID)
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
