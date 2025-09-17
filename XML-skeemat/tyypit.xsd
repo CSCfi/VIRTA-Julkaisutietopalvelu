@@ -1475,6 +1475,10 @@
 				2 = CC BY NC
 				3 = CC BY NC ND
 				4 = CC BY SA
+				5 = CC BY ND 
+				6 = CC BY NC SA
+				7 = All rights reserved
+				
 		    </xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -1484,6 +1488,9 @@
 			<xs:enumeration value="2"/>
 			<xs:enumeration value="3"/>
 			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -1521,6 +1528,10 @@
 				2 = CC BY NC
 				3 = CC BY NC ND
 				4 = CC BY SA
+				5 = CC BY ND 
+				6 = CC BY NC SA
+				7 = All rights reserved
+				
 		    </xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -1530,6 +1541,9 @@
 			<xs:enumeration value="2"/>
 			<xs:enumeration value="3"/>
 			<xs:enumeration value="4"/>
+			<xs:enumeration value="5"/>
+			<xs:enumeration value="6"/>
+			<xs:enumeration value="7"/>
 		</xs:restriction>
 	</xs:simpleType>
 	
