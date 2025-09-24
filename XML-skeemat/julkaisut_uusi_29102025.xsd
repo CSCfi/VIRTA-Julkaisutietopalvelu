@@ -27,27 +27,9 @@
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="OrgSektoriKoodi" type="julkaisut:OrgSektoriKoodiTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Organisaation luokittelu</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
-							<xs:element name="IlmoitusVuosi" type="julkaisut:VuosiTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Vuosiluku muodossa YYYY</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
 							<xs:element name="JulkaisunTunnus" type="julkaisut:JulkaisunTunnusTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Julkaisun yksilöivä tunniste</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
-							<xs:element name="YhteisjulkaisunTunnus" type="julkaisut:JulkaisunTunnusTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Yhteisjulkaisun yksilöivä tunniste</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -121,28 +103,18 @@
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="Avainsanat" minOccurs="0" maxOccurs="1">
+							<xs:element name="Avainsanat"  minOccurs="0" maxOccurs="1">
 								<xs:complexType>
 									<xs:sequence>
-										<xs:element name="Avainsana" minOccurs="1" maxOccurs="unbounded">
+										<xs:element name="AvainsanaTeksti" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation xml:lang="fi">Artikkelin avainsanat</xs:documentation>
+											</xs:annotation>
 											<xs:complexType>
-												<xs:sequence>
-													<xs:element name="AvainsanaTeksti" type="julkaisut:AvainsanaTekstiTyyppi" minOccurs="1" maxOccurs="1">
-														<xs:annotation>
-															<xs:documentation xml:lang="fi">Artikkelin avainsana</xs:documentation>
-														</xs:annotation>
-													</xs:element>
-													<xs:element name="AvainsanaUri" type="julkaisut:AvainsanaUriTyyppi" minOccurs="0" maxOccurs="1">
-														<xs:annotation>
-															<xs:documentation xml:lang="fi">Avainsanan URI</xs:documentation>
-														</xs:annotation>
-													</xs:element>
-													<xs:element name="AvainsanaOntologia" type="julkaisut:AvainsanaOntologiaTyyppi" minOccurs="0" maxOccurs="1">
-														<xs:annotation>
-															<xs:documentation xml:lang="fi">Avainsanan ontologian lyhenne</xs:documentation>
-														</xs:annotation>
-													</xs:element>
-												</xs:sequence>
+												<xs:simpleContent>
+													<xs:extension base="julkaisut:AvainsanaTekstiTyyppi">
+													</xs:extension>
+												</xs:simpleContent>
 											</xs:complexType>
 										</xs:element>
 									</xs:sequence>
@@ -166,10 +138,6 @@
 										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
-								<xs:unique name="UniikkiTiivistelmaKieli">
-									<xs:selector xpath="julkaisut:Tiivistelma"/>
-									<xs:field xpath="@Kieli"/>
-								</xs:unique>
 							</xs:element>
 							
 							<xs:element name="ISBN" type="julkaisut:ISBNTyyppi" minOccurs="0" maxOccurs="2">
@@ -352,40 +320,9 @@
 								</xs:complexType>
 							</xs:element>	
 							
-							<xs:element name="KoulutusalaKoodit" minOccurs="0" maxOccurs="1">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="KoulutusalaKoodi" minOccurs="0" maxOccurs="6">
-											<xs:annotation>
-												<xs:documentation xml:lang="fi">1-6 koulutusalaa mukaan siinä järjestyksessä, mitä tieteenalaa julkaisu eniten koskee</xs:documentation>
-											</xs:annotation>
-											<xs:complexType>
-												<xs:simpleContent>
-													<xs:extension base="julkaisut:KoulutusalaKooditTyyppi">
-														<xs:attribute name="JNro" type="julkaisut:TKAlaAttribuutti" use="required"/>
-													</xs:extension>
-												</xs:simpleContent>
-											</xs:complexType>
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-							
 							<xs:element name="YhteisjulkaisuKVKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Tekijöistä vähintään yksi on affilioitunut muuhun kuin suomalaisen organisaatioon (myös jos tekijällä on affiliaatio sekä suomalainen että ulkomaalaiseen organisaatioon).</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-
-							<xs:element name="YhteisjulkaisuSHPKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Tekijöistä vähintään yksi on affilioitunut yliopistolliseen sairaanhoitopiiriin</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-
-							<xs:element name="YhteisjulkaisuTutkimuslaitosKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Tekijöistä vähintään yksi on affilioitunut valtion tutkimuslaitokseen</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 
@@ -404,12 +341,6 @@
 							<xs:element name="JulkaisunKieliKoodi" type="julkaisut:JulkaisunKieliKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Kieli, jolla julkaisu on kirjoitettu. Vuoden 2003 TK:n kielikoodiston mukainen arvo</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
-							<xs:element name="AvoinSaatavuusKoodi" type="julkaisut:AvoinSaatavuusKoodiTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Julkaisun avoin saatavuus seuraavan luokituksen mukaisesti: ei open access/ open access/open access, rinnakkaistallennettu/ei tietoa. Taidealan julkaisulle imoitetaan, jos on sovellettavissa raportoitavaan taidealan julkaisuun.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -446,12 +377,6 @@
 							</xs:element>
 
 							<!-- Avoin saatavuus -tietoa laajentavat elementit päättyvät -->
-							
-							<xs:element name="EVOjulkaisuKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Ns. EVO-hakemukseen (erityisvaltionosuushakemus) sosiaali- ja terveysministeriölle tulevat artikkelit</xs:documentation>
-								</xs:annotation>
-							</xs:element>
 							
 							<xs:element name="YhteisjulkaisuYritysKytkin" type="julkaisut:KyllaEiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
@@ -544,12 +469,6 @@
 							<xs:element name="PysyvaOsoiteTeksti" type="julkaisut:PysyvaOsoiteTekstiTyyppi" minOccurs="0" maxOccurs="1">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Julkaisun pysyviin tunnisteisiin (esim. DOI, URN tai handle) perus-tuva verkko-osoite, joka vie suoraan julkaisun kokotekstiversioon (vapaasti saatavilla olevaan tai kustantajan palvelimella sijaitse-vaan käyttöoikeudeltaan rajoitettuun versioon).</xs:documentation>
-								</xs:annotation>
-							</xs:element>
-							
-							<xs:element name="JuuliOsoiteTeksti" type="julkaisut:PysyvaOsoiteTekstiTyyppi" minOccurs="0" maxOccurs="1">
-								<xs:annotation>
-									<xs:documentation xml:lang="fi">Linkki julkaisun tietoihin Juulissa</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
@@ -748,18 +667,6 @@
 												</xs:extension>
 											</xs:simpleContent>
 										</xs:complexType>											
-										</xs:element>
-									</xs:sequence>
-								</xs:complexType>
-							</xs:element>
-
-							<xs:element name="YhteisJulkaisu" minOccurs="0" maxOccurs="1">
-								<xs:complexType>
-									<xs:sequence>
-										<xs:element name="JulkaisunTunnus" type="julkaisut:JulkaisunTunnusTyyppi" minOccurs="0" maxOccurs="unbounded">
-										<xs:annotation>
-											<xs:documentation xml:lang="fi">Julkaisun yksilöivä tunniste.</xs:documentation>
-										</xs:annotation>
 										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
