@@ -87,6 +87,23 @@
 			<ORCID>0000-0000-0000-0000</ORCID>
 		</Tekija>
 	</Tekijat>
+	<Rahoituspaatokset>
+        <Rahoituspaatos>
+			<RahoituspaatosID IDTyyppi="LocalID">347233</RahoituspaatosID>
+			<RahoittajaID IDTyyppi="BusinessID">0245893-9</RahoittajaID>
+			<RahoittajanNimi>Suomen Akatemia</RahoittajanNimi>
+        </Rahoituspaatos>
+	</Rahoituspaatokset>
+	<Infrastruktuurit>
+        <Infrastruktuuri>
+			<InfrastruktuuriID IDTyyppi="URN">urn:nbn:fi:research-infras-2016072515</InfrastruktuuriID>
+        </Infrastruktuuri>
+	</Infrastruktuurit>
+	<Aineistot>
+        <Aineisto>
+			<AineistoID IDTyyppi="URN">urn:nbn:fi:lb-2022090821</AineistoID>
+        </Aineisto>
+	</Aineistot>
 	</Julkaisu>
 
 <!-- ///F2 julkaisua vastaava esimerkki -->
