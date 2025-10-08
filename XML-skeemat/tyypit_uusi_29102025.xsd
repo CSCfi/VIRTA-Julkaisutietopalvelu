@@ -248,7 +248,6 @@
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:minLength value="1"/>
 			<xs:maxLength value="100"/>
 		</xs:restriction>
 	</xs:simpleType>
@@ -686,14 +685,13 @@
 		</xs:restriction>
 	</xs:simpleType>		
 	
-    <xs:simpleType name="JulkaisunKieliKoodiTyyppi">
+    <xs:simpleType name="KieliKoodiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
-				Julkaisun kieli saa olla tyhjä. Jos kentässä on arvo, tulee sen olla vuoden 2003 TK:n kielikoodiston mukainen arvo. 99=tuntematon ei ole hyväksytty arvo.
+				Arvon tulee olla vuoden 2003 TK:n kielikoodiston mukainen. 99=tuntematon ei ole hyväksytty arvo.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
-			<xs:maxLength value="20"/>
 			<xs:enumeration value="20"/>
 			<xs:enumeration value="98"/>
 			<xs:enumeration value="aa"/>    <!-- afar -->
@@ -893,6 +891,26 @@
 		</xs:restriction>
 	</xs:simpleType>	
 		
+	<xs:simpleType name="AvoinSaatavuusKoodiTyyppi">
+		<xs:annotation>
+			<xs:documentation xml:lang="fi">
+				Avoin saatavuus -kenttä saa olla tyhjä, ja sallitut arvot ovat koodiston mukaiset 0, 1, 2 tai 9.
+				
+				Koodistoarvot vuodesta 2016 eteenpäin:
+				0 = Ei vastausta
+				1 = Open access -julkaisukanavassa ilmestynyt julkaisu
+				2 = Hybridijulkaisukanavassa ilmestynyt avoin julkaisu
+			</xs:documentation>
+		</xs:annotation>
+		<xs:restriction base="xs:string">
+			<xs:maxLength value="1"/>
+			<xs:enumeration value="0"/>
+			<xs:enumeration value="1"/>
+			<xs:enumeration value="2"/>
+			<xs:enumeration value="9"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
     <xs:simpleType name="DOITyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">

@@ -96,22 +96,6 @@
 		</xs:restriction>
 	</xs:simpleType>
 	
-	<xs:simpleType name="OrgSektoriKoodiTyyppi">
-		<xs:annotation>
-			<xs:documentation xml:lang="fi">
-				Organisaation luokittelu 
-			</xs:documentation>
-		</xs:annotation>
-		<xs:restriction base="xs:integer">
-			<xs:totalDigits value="2"/>
-			  <xs:enumeration value="0"/> <!-- Tuntematon -->
-			  <xs:enumeration value="1"/> <!-- Yliopisto -->
-			  <xs:enumeration value="2"/> <!-- Ammattikorkeakoulu -->
-			  <xs:enumeration value="3"/> <!-- Tutkimuslaitos -->
-			  <xs:enumeration value="4"/> <!-- Yliopistollinen sairaala -->
-		</xs:restriction>
-	</xs:simpleType>
-	
 	<xs:simpleType name="VuosiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
@@ -260,7 +244,7 @@
 	<xs:simpleType name="AvainsanaTekstiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
-				Vapaa tekstikenttä, artikkelin avainsanat.
+				Vapaa tekstikenttä
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -907,7 +891,7 @@
 			<xs:enumeration value="krl"/>   <!-- karjala -->
 		</xs:restriction>
 	</xs:simpleType>	
-			
+		
 	<xs:simpleType name="AvoinSaatavuusKoodiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
@@ -927,7 +911,7 @@
 			<xs:enumeration value="9"/>
 		</xs:restriction>
 	</xs:simpleType>
-		
+	
     <xs:simpleType name="DOITyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
@@ -1105,39 +1089,6 @@
 			<xs:enumeration value="616"/> 	<!-- Muut humanistiset tieteet -->
 			<!-- <xs:enumeration value="9"/>  	MUUT (ei käytössä) -->
 			<!-- <xs:enumeration value="999"/>  	Muut (ei käytössä) -->
-		</xs:restriction>
-	</xs:simpleType>
-	
-	<xs:simpleType name="KoulutusalaKooditTyyppi">
-		<xs:restriction base="xs:integer">
-			<xs:enumeration value="1"/>   	<!-- Humanistinen ja kasvatusala -->
-			<xs:enumeration value="2"/> 	<!-- Kulttuuriala -->
-			<xs:enumeration value="3"/> 	<!-- Yhteiskuntatieteiden, liiketalouden ja -->
-			<xs:enumeration value="4"/>   	<!-- Luonnontieteiden ala -->
-			<xs:enumeration value="5"/>    	<!-- Tekniikan ja liikenteen ala -->
-			<xs:enumeration value="6"/>    	<!-- Luonnonvara- ja ympäristöala -->
-			<xs:enumeration value="7"/>   	<!-- Sosiaali-, terveys- ja liikunta-ala -->
-			<xs:enumeration value="8"/>   	<!-- Matkailu-, ravitsemis- ja talousala -->		
-			<xs:enumeration value="75"/>  	<!-- Teologinen -->
-			<xs:enumeration value="76"/>  	<!-- Humanistinen -->
-			<xs:enumeration value="77"/>  	<!-- Taideteollinen -->
-			<xs:enumeration value="78"/>  	<!-- Musiikkiala -->
-			<xs:enumeration value="79"/>  	<!-- Teatteri- ja tanssiala -->
-			<xs:enumeration value="80"/>  	<!-- Kasvatustieteellinen -->
-			<xs:enumeration value="81"/>  	<!-- Liikuntatieteellinen -->
-			<xs:enumeration value="82"/>  	<!-- Yhteiskuntatieteellinen -->
-			<xs:enumeration value="83"/>  	<!-- Psykologia -->
-			<xs:enumeration value="84"/>  	<!-- Terveystieteet -->
-			<xs:enumeration value="85"/>  	<!-- Oikeustieteellinen -->
-			<xs:enumeration value="86"/>  	<!-- Kauppatieteellinen -->
-			<xs:enumeration value="87"/>  	<!-- Luonnontieteellinen -->
-			<xs:enumeration value="88"/>  	<!-- Maatalous metsätieteellinen -->
-			<xs:enumeration value="89"/>  	<!-- Teknillistieteellinen -->
-			<xs:enumeration value="90"/>  	<!-- Lääketieteellinen -->
-			<xs:enumeration value="91"/>  	<!-- Hammaslääketieteellinen -->
-			<xs:enumeration value="92"/>  	<!-- Eläinlääketieteellinen -->
-			<xs:enumeration value="93"/>  	<!-- Farmasia --> 
-			<xs:enumeration value="94"/>  	<!-- Kuvataideala --> 	
 		</xs:restriction>
 	</xs:simpleType>
 
@@ -1663,7 +1614,7 @@
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 				Pysyvä tunniste
-				http://uri.suomi.fi/codelist/research/PID
+				http://uri.suomi.fi/codelist/research/PID, lisätty paikallinen tunniste (LocalID)
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
@@ -1683,7 +1634,7 @@
 			<xs:enumeration value="ISSN"/>
 			<xs:enumeration value="eISSN"/>
 			<xs:enumeration value="ISTC"/>
-			<xs:enumeration value="FunderLocalID"/>
+			<xs:enumeration value="LocalID"/>
 			<xs:enumeration value="LSID"/>
 			<xs:enumeration value="Orcid"/>
 			<xs:enumeration value="PIC"/>

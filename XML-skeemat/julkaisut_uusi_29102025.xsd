@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:julkaisut="urn:mace:funet.fi:julkaisut/2015/03/01" xmlns:vc="http://www.w3.org/2007/XMLSchema-versioning" targetNamespace="urn:mace:funet.fi:julkaisut/2015/03/01" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.12" vc:minVersion="1.0">
 	
-	<xs:include schemaLocation="tyypit_uusi_08102025.xsd">
+	<xs:include schemaLocation="tyypit_uusi_29102025.xsd">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
 				Tiedonsiirtoelementtien tyypit.
@@ -131,7 +131,7 @@
 											<xs:complexType>
 												<xs:simpleContent>
 													<xs:extension base="julkaisut:TiivistelmaTyyppi">
-														<xs:attribute name="Kieli" type="julkaisut:JulkaisunKieliKoodiTyyppi"/>
+														<xs:attribute name="Kieli" type="julkaisut:KieliKoodiTyyppi"/>
 													</xs:extension>
 												</xs:simpleContent>
 											</xs:complexType>
@@ -338,9 +338,15 @@
 								</xs:annotation>
 							</xs:element>
 							
-							<xs:element name="JulkaisunKieliKoodi" type="julkaisut:JulkaisunKieliKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
+							<xs:element name="JulkaisunKieliKoodi" type="julkaisut:KieliKoodiTyyppi" minOccurs="0" maxOccurs="1" nillable="true">
 								<xs:annotation>
 									<xs:documentation xml:lang="fi">Kieli, jolla julkaisu on kirjoitettu. Vuoden 2003 TK:n kielikoodiston mukainen arvo</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							
+							<xs:element name="AvoinSaatavuusKoodi" type="julkaisut:AvoinSaatavuusKoodiTyyppi" minOccurs="0" maxOccurs="1">
+								<xs:annotation>
+									<xs:documentation xml:lang="fi">Julkaisun avoin saatavuus seuraavan luokituksen mukaisesti: ei open access/ open access/open access, rinnakkaistallennettu/ei tietoa. Taidealan julkaisulle imoitetaan, jos on sovellettavissa raportoitavaan taidealan julkaisuun.</xs:documentation>
 								</xs:annotation>
 							</xs:element>
 							
