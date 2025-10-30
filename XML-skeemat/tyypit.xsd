@@ -685,10 +685,10 @@
 		</xs:restriction>
 	</xs:simpleType>		
 	
-    <xs:simpleType name="JulkaisunKieliKoodiTyyppi">
+    <xs:simpleType name="KieliKoodiTyyppi">
 		<xs:annotation>
 			<xs:documentation xml:lang="fi">
-				Julkaisun kieli saa olla tyhjä. Jos kentässä on arvo, tulee sen olla vuoden 2003 TK:n kielikoodiston mukainen arvo. 99=tuntematon ei ole hyväksytty arvo.
+				Arvon tulee olla vuoden 2003 TK:n kielikoodiston mukainen. 99=tuntematon ei ole hyväksytty arvo.
 			</xs:documentation>
 		</xs:annotation>
 		<xs:restriction base="xs:string">
