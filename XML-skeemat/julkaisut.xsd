@@ -144,6 +144,10 @@
 										</xs:element>
 									</xs:sequence>
 								</xs:complexType>
+								<xs:unique name="UniikkiKieli">
+									<xs:selector xpath="julkaisut:Tiivistelma"/>
+									<xs:field xpath="@Kieli"/>
+								</xs:unique>
 							</xs:element>
 							
 							<xs:element name="ISBN" type="julkaisut:ISBNTyyppi" minOccurs="0" maxOccurs="2">
