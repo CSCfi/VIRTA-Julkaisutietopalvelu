@@ -879,6 +879,8 @@
 			<xs:enumeration value="za"/>    <!-- zhuang -->
 			<xs:enumeration value="zh"/>    <!-- kiina -->
 			<xs:enumeration value="zu"/>    <!-- zulu -->
+			<xs:enumeration value="fse"/>   <!-- suomalainen viittomakieli -->
+			<xs:enumeration value="fss"/>   <!-- suomenruotsalainen viittomakieli -->
 			<xs:enumeration value="smn"/>	<!-- inarinsaame -->
 			<xs:enumeration value="smj"/>   <!-- luulajansaame -->
 			<xs:enumeration value="sme"/>   <!-- pohjoissaame -->
