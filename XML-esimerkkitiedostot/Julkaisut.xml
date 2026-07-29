@@ -16,22 +16,14 @@
 	<TekijoidenLkm>4</TekijoidenLkm>
 	<SivunumeroTeksti>97-119</SivunumeroTeksti>
 	<Avainsanat>
-		<AvainsanaTeksti>Distributed computing</AvainsanaTeksti>
-		<AvainsanaTeksti>Solar energy</AvainsanaTeksti>
-		<AvainsanaTeksti>Green computing</AvainsanaTeksti>
-		<AvainsanaTeksti>Energy storage</AvainsanaTeksti>
-		<AvainsanaTeksti>Scientific computing</AvainsanaTeksti>
-		<AvainsanaTeksti>Distributed data center</AvainsanaTeksti>
-		<AvainsanaTeksti>DATA CENTERS</AvainsanaTeksti>
-		<AvainsanaTeksti>SYSTEMS</AvainsanaTeksti>
-		<AvainsanaTeksti>POWER</AvainsanaTeksti>
-		<AvainsanaTeksti>MIDDLEWARE</AvainsanaTeksti>
-		<AvainsanaTeksti>STORAGE</AvainsanaTeksti>
-		<AvainsanaTeksti>COST</AvainsanaTeksti>
-		<AvainsanaTeksti>TECHNOLOGIES</AvainsanaTeksti>
-		<AvainsanaTeksti>MANAGEMENT</AvainsanaTeksti>
-		<AvainsanaTeksti>EVOLUTION</AvainsanaTeksti>
-		<AvainsanaTeksti>BATTERY</AvainsanaTeksti>
+		<Avainsana Kieli="en">
+			<AvainsanaTeksti>Distributed computing</AvainsanaTeksti>
+		</Avainsana>
+		<Avainsana Kieli="en">
+			<AvainsanaTeksti>Solar energy</AvainsanaTeksti>
+			<AvainsanaUri>https://finto.fi/yso/fi/page/p19636</AvainsanaUri>
+			<AvainsanaOntologia>YSO</AvainsanaOntologia>
+		</Avainsana>
 	</Avainsanat>
 	<Tiivistelma>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</Tiivistelma>
 	<JufoTunnus>75819</JufoTunnus>
